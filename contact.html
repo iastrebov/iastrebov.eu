@@ -1,0 +1,46 @@
+---
+layout: base
+title: Contact
+description: Contact details for Egor Iastrebov.
+---
+
+<div class="box box-inner">
+    <h2 class="title title--h2">Get in touch</h2>
+    <p>The easiest way to reach me is by email. I am based in Porto and interested in backend engineering,
+        platform work, and thoughtful product delivery.</p>
+
+    <ul class="details-info details-info--inline">
+        <li class="details-info__item">
+            <span class="box icon-box"><i class="font-icon icon-envelope"></i></span>
+            <div class="contacts-block__info">
+                <span class="overhead">Email</span>
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </div>
+        </li>
+        <li class="details-info__item">
+            <span class="box icon-box"><i class="font-icon icon-location"></i></span>
+            <div class="contacts-block__info">
+                <span class="overhead">Location</span>
+                <span>{{ site.location }}</span>
+            </div>
+        </li>
+        <li class="details-info__item">
+            <span class="box icon-box"><i class="feathericon-linkedin"></i></span>
+            <div class="contacts-block__info">
+                <span class="overhead">LinkedIn</span>
+                <a href="{{ site.linkedin_url }}">linkedin.com/in/{{ site.linkedin_handle }}</a>
+            </div>
+        </li>
+        <li class="details-info__item">
+            <span class="box icon-box"><i class="feathericon-github"></i></span>
+            <div class="contacts-block__info">
+                <span class="overhead">GitHub</span>
+                <a href="{{ site.github_url }}">github.com/{{ site.github_handle }}</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="text-end mt-3">
+        <a class="btn" href="mailto:{{ site.email }}"><i class="font-icon icon-send"></i> Send Email</a>
+    </div>
+</div>

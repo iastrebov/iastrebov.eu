@@ -1,0 +1,10 @@
+.git
+.gitignore
+_site
+.jekyll-cache
+.sass-cache
+.jekyll-metadata
+vendor
+node_modules
+*.iml
+.idea

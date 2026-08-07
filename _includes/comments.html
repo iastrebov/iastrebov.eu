@@ -1,0 +1,19 @@
+{% if site.giscus.repo and site.giscus.repo_id and site.giscus.category_id %}
+<h2 class="title title--h2">Comments</h2>
+
+<script src="https://giscus.app/client.js"
+        data-repo="{{ site.giscus.repo }}"
+        data-repo-id="{{ site.giscus.repo_id }}"
+        data-category="{{ site.giscus.category }}"
+        data-category-id="{{ site.giscus.category_id }}"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="bottom"
+        data-theme="dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endif %}

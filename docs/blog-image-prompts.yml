@@ -1,0 +1,204 @@
+# Blog preview image prompts for iastrebov.eu.
+# These are the source prompts for future AI image generation pipelines.
+# Current committed cover PNGs are deterministic local graphics, not AI prompt outputs.
+articles:
+  - id: 1
+    slug: no-tests-no-merge-why-i-reject-half-of-prs
+    title: "No Tests, No Merge: Why I Reject Half of PRs"
+    image_prompt: |
+      A cinematic, dramatic shot of a glowing red "REJECTED" stamp hovering over a blurred computer screen displaying lines of code. Dark background, neon red lighting, cyberpunk hacker vibe.
+  - id: 2
+    slug: stop-coding-start-thinking-tdd-mindset
+    title: "Stop Coding, Start Thinking: The True TDD Mindset"
+    image_prompt: |
+      A minimalist, sleek workspace. A glowing brain hologram floating above a mechanical keyboard. High contrast, cool blue and silver color palette, futuristic and clean.
+  - id: 3
+    slug: java-25-is-here-why-your-java-8-code-is-an-embarrassment
+    title: "Java 25 Is Here: Why Your Java 8 Code Is an Embarrassment"
+    image_prompt: |
+      A tombstone with "Java 8" engraved on it, covered in cobwebs, sitting next to a glowing, futuristic monolith with "Java 25" written in sleek neon letters.
+  - id: 4
+    slug: python-is-for-scripts-java-is-for-business
+    title: "Python Is For Scripts, Java Is For Business"
+    image_prompt: |
+      A split screen. On the left, a fragile toy snake made of duct tape. On the right, a massive, impenetrable bank vault door made of polished steel with a Java logo engraved on it.
+  - id: 5
+    slug: works-on-my-machine-excuse-ends-here
+    title: "The Works On My Machine Excuse Ends Here"
+    image_prompt: |
+      A frustrated developer throwing their hands up in front of a laptop that is literally on fire. In the background, a calm, organized server rack. Cinematic lighting, dramatic shadows.
+  - id: 6
+    slug: string-theory-optimizing-memory-high-load-systems
+    title: "String Theory: Optimizing Memory In High-Load Systems"
+    image_prompt: |
+      A microscopic, hyper-realistic view of digital data streams (1s and 0s) being compressed into a tiny, glowing diamond. Sci-fi aesthetic, deep blues and purples.
+  - id: 7
+    slug: microservices-are-not-a-silver-bullet
+    title: "Microservices Are Not A Silver Bullet: You Probably Need A Monolith"
+    image_prompt: |
+      A beautifully constructed, solid stone pyramid next to a chaotic, tangled web of hundreds of fragile, tiny glass spheres connected by sparking wires.
+  - id: 8
+    slug: refactoring-without-tests-is-just-guessing
+    title: "Refactoring Without Tests Is Just Guessing"
+    image_prompt: |
+      A person blindfolded, walking on a tightrope over a dark abyss, holding a laptop. High tension, dramatic lighting, metaphorical style.
+  - id: 9
+    slug: competitive-programming-superpower-or-waste-of-time
+    title: "Competitive Programming: Superpower Or Waste Of Time?"
+    image_prompt: |
+      A split image: one side shows an esports arena with flashing lights and a timer; the other shows a calm, complex architectural blueprint of a software system.
+  - id: 10
+    slug: 10-years-in-big-tech-ugly-truth-about-fintech
+    title: "10 Years In Big Tech: The Ugly Truth About Fintech"
+    image_prompt: |
+      A glossy, luxurious skyscraper reflecting a golden sunset, but the reflection shows a dark, stressful, stormy sky. Cinematic and highly contrasted.
+  - id: 11
+    slug: seniority-is-not-about-years-of-experience
+    title: "Seniority Is Not About Years Of Experience"
+    image_prompt: |
+      Two identical empty chairs in a modern office. Above one chair, a glowing "10 Years" sign. Above the other, a glowing "Responsibility" sign. Clean, corporate, yet striking.
+  - id: 12
+    slug: your-roadmap-is-wrong-stop-learning-syntax-start-building
+    title: "Your Roadmap Is Wrong: Stop Learning Syntax, Start Building"
+    image_prompt: |
+      A massive, endless pile of unopened programming books and "Certificate of Completion" papers being burned to power a glowing, running server engine.
+  - id: 13
+    slug: how-to-read-documentation-like-a-senior-engineer
+    title: "How To Read Documentation Like A Senior Engineer"
+    image_prompt: |
+      A glowing, ancient runic tablet being deciphered by a high-tech laser scanner. Epic, mysterious, blending fantasy with sci-fi.
+  - id: 14
+    slug: master-structured-concurrency-in-java-25
+    title: "Master Structured Concurrency In Java 25"
+    image_prompt: |
+      Multiple glowing neon threads weaving together perfectly into a thick, unbreakable cable. Highly organized, symmetrical, cyberpunk aesthetic.
+  - id: 15
+    slug: ai-wont-replace-you-but-i-will-if-you-use-it-like-a-junior
+    title: "AI Won't Replace You, But I Will If You Use It Like A Junior"
+    image_prompt: |
+      A futuristic robot holding a glowing wrench, standing behind a human developer and guiding their hands. Cyberpunk, neon lighting, clean tech vibe.
+  - id: 16
+    slug: anatomy-of-a-perfect-code-review
+    title: "The Anatomy Of A Perfect Code Review"
+    image_prompt: |
+      A surgeon's tray, but instead of scalpels, it holds glowing computer chips and code snippets under a magnifying glass. Clinical, sharp, sterile.
+  - id: 17
+    slug: burnout-is-for-those-who-cant-say-no
+    title: "Burnout Is For Those Who Cannot Say No"
+    image_prompt: |
+      A heavy steel door with the word "NO" painted on it in bold, defiant yellow. Behind the door, a chaotic storm of tickets and emails is trying to burst through.
+  - id: 18
+    slug: why-i-dont-hire-framework-developers
+    title: "Why I Do Not Hire Framework Developers"
+    image_prompt: |
+      A person wearing a t-shirt that says "Spring Boot" trying to fix a complex car engine with a single, bent screwdriver. Comedic, slightly exaggerated, vibrant colors.
+  - id: 19
+    slug: one-million-dollar-bug-juniors-nightmare
+    title: "The $1 Million Bug: A Junior's Nightmare"
+    image_prompt: |
+      A glowing, terrifying insect-like monster emerging from a crack in a pristine, white server rack. Alarms flashing red in the background.
+  - id: 20
+    slug: my-developer-setup-2026-tools-that-actually-matter
+    title: "My Developer Setup 2026: Tools That Actually Matter"
+    image_prompt: |
+      A sleek, dark-mode IDE open on an ultra-wide monitor, surrounded by minimal desk accessories. Moody desk lighting, highly aesthetic and professional.
+  - id: 21
+    slug: your-100-percent-test-coverage-is-a-lie
+    title: "Your 100% Test Coverage Is A Lie"
+    image_prompt: |
+      A shiny, golden trophy that says "100% Coverage" but it is visibly crumbling and hollow inside, revealing rusty gears. Dark, dramatic lighting.
+  - id: 22
+    slug: idempotency-how-not-to-charge-a-client-twice
+    title: "Idempotency: How Not To Charge A Client Twice"
+    image_prompt: |
+      Two identical glowing credit cards floating above a sleek checkout terminal. A bright red "X" suddenly shatters the second card into digital particles. Cyberpunk aesthetics.
+  - id: 23
+    slug: stop-using-orms-like-a-junior
+    title: "Stop Using ORMs Like A Junior"
+    image_prompt: |
+      A massive, bloated, mechanical monster (representing an ORM) crushing a tiny, sleek server rack under its weight.
+  - id: 24
+    slug: agile-is-dead-and-you-killed-it
+    title: "Agile Is Dead, And You Killed It"
+    image_prompt: |
+      A zombie dressed in corporate casual attire mindlessly moving sticky notes on a Kanban board in a dark, abandoned office.
+  - id: 25
+    slug: truth-about-leetcode-its-just-an-iq-test
+    title: "The Truth About LeetCode: It's Just An IQ Test"
+    image_prompt: |
+      A hamster running furiously on a glowing, high-tech wheel that looks like a binary tree. Sleek, neon green and black colors.
+  - id: 26
+    slug: null-is-not-an-option-use-optional-or-fail
+    title: "Null Is Not An Option: Use Optional Or Fail"
+    image_prompt: |
+      A terrifying, black void (representing Null) swallowing a glowing, pristine line of code. Alarms flashing in the background.
+  - id: 27
+    slug: why-i-ban-mockito-in-my-teams
+    title: "Why I Ban Mockito In My Teams"
+    image_prompt: |
+      A graveyard of broken robotic mannequins (representing mocks) with a massive, real, glowing engine (representing a real database) lowering from the ceiling.
+  - id: 28
+    slug: rest-is-lazy-use-grpc-for-real-systems
+    title: "REST Is Lazy. Use gRPC For Real Systems"
+    image_prompt: |
+      A rusty, slow-moving steam train (labeled REST) being passed in a blur by a hyper-speed, glowing bullet train (labeled gRPC) on parallel tracks.
+  - id: 29
+    slug: how-to-survive-your-first-on-call-shift
+    title: "How To Survive Your First On-Call Shift"
+    image_prompt: |
+      A glowing smartphone displaying a red "PAGERDUTY ALERT" at 3:00 AM, illuminating the face of a stressed, wide-awake engineer in a dark bedroom.
+  - id: 30
+    slug: database-locks-silent-killer-high-load-systems
+    title: "Database Locks: The Silent Killer Of High-Load Systems"
+    image_prompt: |
+      A giant steel vault door jammed by a single, tiny, glowing digital wrench. Sparks flying everywhere.
+  - id: 31
+    slug: dont-be-a-yes-man-how-to-push-back-on-product-managers
+    title: "Don't Be A Yes Man: How To Push Back On Product Managers"
+    image_prompt: |
+      A glowing, impenetrable energy shield blocking a barrage of sticky notes and "URGENT" stamps being thrown by shadowy figures.
+  - id: 32
+    slug: java-records-youre-still-writing-boilerplate
+    title: "Java Records: You're Still Writing Boilerplate?"
+    image_prompt: |
+      A massive mountain of useless paper documents being instantly vaporized by a clean, precise laser beam.
+  - id: 33
+    slug: clean-code-is-overrated-when-you-need-performance
+    title: "Clean Code Is Overrated When You Need Performance"
+    image_prompt: |
+      A perfectly organized, beautiful toolbox sitting next to a custom-built, chaotic, but blazing-fast race car engine covered in grease.
+  - id: 34
+    slug: stop-asking-for-mentors-start-reading-code
+    title: "Stop Asking For Mentors, Start Reading Code"
+    image_prompt: |
+      A junior developer looking desperately at an empty chair, while a glowing, massive library of open-source code floats ignored behind them.
+  - id: 35
+    slug: anatomy-of-a-distributed-transaction
+    title: "The Anatomy Of A Distributed Transaction"
+    image_prompt: |
+      A glowing, complex map of glowing nodes, showing a pulse of data traveling through them, with one node turning red and the entire pulse smoothly reversing.
+  - id: 36
+    slug: your-api-is-a-mess-5-rules-for-backward-compatibility
+    title: "Your API Is A Mess: 5 Rules For Backward Compatibility"
+    image_prompt: |
+      A futuristic bridge being rebuilt while high-speed cars continue to drive over it flawlessly. Neon lights, highly structured.
+  - id: 37
+    slug: why-you-failed-the-system-design-interview
+    title: "Why You Failed The System Design Interview"
+    image_prompt: |
+      A whiteboard covered in messy, disconnected boxes and arrows, with a giant red "REJECTED" stamped across it.
+  - id: 38
+    slug: log-like-your-job-depends-on-it-because-it-does
+    title: "Log Like Your Job Depends On It Because It Does"
+    image_prompt: |
+      A completely dark room illuminated only by a precise, glowing trail of neon breadcrumbs leading to a bug. Cyberpunk detective aesthetic.
+  - id: 39
+    slug: git-blame-is-not-a-weapon-its-a-diagnostic-tool
+    title: "Git Blame Is Not A Weapon, It's A Diagnostic Tool"
+    image_prompt: |
+      Two developers pointing fingers at each other, while a server rack behind them quietly burns to the ground.
+  - id: 40
+    slug: my-100k-mistake-a-post-mortem
+    title: "My $100K Mistake: A Post-Mortem"
+    image_prompt: |
+      A financial chart showing a sudden, sharp plunge into the red, illuminated by the glow of a computer monitor. Somber, reflective lighting.

@@ -1,0 +1,60 @@
+title: Egor Iastrebov
+email: astore.hawk@gmail.com
+description: >-
+  Java software engineer in Porto building backend systems across
+  fintech, ecommerce, telecom, and internal platform teams.
+baseurl: ""
+url: https://iastrebov.eu
+lang: en
+job_title: Java Software Engineer
+location: Porto, Portugal
+linkedin_url: https://www.linkedin.com/in/iastrebov/
+linkedin_handle: iastrebov
+github_url: https://github.com/iastrebov/
+github_handle: iastrebov
+social_image: /assets/images/social.jpg
+og_locale: en_US
+author:
+  name: Egor Iastrebov
+
+# Temporarily disabled during the domain migration. Restore the IDs after the
+# new production hostname is verified in the corresponding services.
+google_analytics_id:
+adsense_client_id: ca-pub-1311909665011500
+giscus:
+  repo:
+  repo_id:
+  category:
+  category_id:
+
+exclude:
+  - AGENTS.md
+  - Dockerfile
+  - README.md
+  - docs/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+navigation:
+  - title: About
+    page: /
+    url: /
+  - title: Resume
+    page: /resume.html
+    url: /resume
+  - title: Blog
+    page: /blog.html
+    url: /blog
+  - title: Contact
+    page: /contact.html
+    url: /contact
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:title/

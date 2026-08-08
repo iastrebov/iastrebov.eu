@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "10 Years In Big Tech: The Ugly Truth About Fintech"
+title: "A Decade In Backend: The Uncomfortable Truth About Fintech"
 date: 2026-03-29 21:08:00 +0100
 categories: software engineering
 tags: [fintech, career, big-tech, backend]
 excerpt_separator: <!--more-->
 greeting: "salary has invoice"
-description: "A blunt reality check about fintech engineering: on-call pressure, money responsibility, audits, incidents, and why high salary has cost."
+description: "A decade-spanning view of fintech backend work: on-call pressure, money responsibility, audits, incidents, and the real cost behind compensation."
 image:
   url: assets/images/blog/2026-03-29-10-years-in-big-tech-ugly-truth-about-fintech-cover.png
   alt: "Luxury skyscraper at sunset reflecting a stormy stressful sky"
 ---
-Fintech is sold like prestige: modern office, high salary, clever people, important systems. All true.
+Fintech is sold like prestige: modern office, high salary, clever people, important systems. Some of that is true, but it is incomplete.
 
 Also true: your bug can block salary payment for real person. Your alert can wake you at night. Your "small change" can become regulatory incident. Welcome to adult backend engineering.
 
@@ -63,7 +63,6 @@ Join fintech if you want serious backend experience and can handle responsibilit
 
 The money is good because blast radius is real. Respect that, or it will educate you.
 
-## Related reading
 
 - [The Works On My Machine Excuse Ends Here](/blog/works-on-my-machine-excuse-ends-here/)
 - [Seniority Is Not About Years Of Experience](/blog/seniority-is-not-about-years-of-experience/)

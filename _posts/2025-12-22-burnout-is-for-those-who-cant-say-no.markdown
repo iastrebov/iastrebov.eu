@@ -69,13 +69,12 @@ You cannot control whole company. You can control your honesty, your estimates, 
 
 If environment punishes every boundary, leave when possible. Hero culture does not become healthy because you sacrificed harder.
 
-## Final Thought
+## The Boundary Test
 
 Saying no is not negativity. It is how adults preserve quality and sanity.
 
 Good engineers ship. Great engineers make sure shipping does not destroy system or people.
 
-## Related reading
 
 - [10 Years In Big Tech: The Ugly Truth About Fintech](/blog/10-years-in-big-tech-ugly-truth-about-fintech/)
 - [Seniority Is Not About Years Of Experience](/blog/seniority-is-not-about-years-of-experience/)

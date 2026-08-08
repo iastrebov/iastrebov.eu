@@ -96,13 +96,12 @@ Week one: domain model and tests. Week two: REST API and database. Week three: D
 
 Then start second project with lessons learned.
 
-## Final Push
+## Build The Next Uncomfortable Thing
 
 Stop asking for perfect roadmap. Roadmap is simple: build, test, deploy, read docs, repeat.
 
 Syntax comes from use. Engineering comes from finishing.
 
-## Related reading
 
 - [Competitive Programming: Superpower Or Waste Of Time?](/blog/competitive-programming-superpower-or-waste-of-time/)
 - [How To Read Documentation Like A Senior Engineer](/blog/how-to-read-documentation-like-a-senior-engineer/)

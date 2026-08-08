@@ -84,13 +84,12 @@ Use entities for transactional domain changes. Use projections for reads. Use ex
 
 Add tests that fail on N+1 when possible.
 
-## Final Rule
+## Inspect The SQL
 
 ORM should reduce boilerplate, not remove understanding.
 
 If you cannot explain SQL your code generates, you are not using ORM. ORM is using you.
 
-## Related reading
 
 - [Your Roadmap Is Wrong: Stop Learning Syntax, Start Building](/blog/your-roadmap-is-wrong-stop-learning-syntax-start-building/)
 - [Why I Do Not Hire Framework Developers](/blog/why-i-dont-hire-framework-developers/)

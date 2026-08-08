@@ -83,13 +83,12 @@ If everything is ERROR, nothing is ERROR.
 
 Never log card numbers, passwords, tokens, full personal data. Mask aggressively. Compliance people are not amused by your convenient debug line.
 
-## Final Rule
+## What A Useful Log Must Answer
 
 When incident happens, logs should answer: who, what, when, where, correlation id, state transition, and failure reason.
 
 Log like tired engineer at 3 AM depends on it. Because eventually it is you.
 
-## Related reading
 
 - [The Works On My Machine Excuse Ends Here](/blog/works-on-my-machine-excuse-ends-here/)
 - [The $1 Million Bug: A Junior's Nightmare](/blog/one-million-dollar-bug-juniors-nightmare/)

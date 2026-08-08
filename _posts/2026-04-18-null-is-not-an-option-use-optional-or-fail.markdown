@@ -95,13 +95,12 @@ Also bad: <code>optional.get()</code> because you were too lazy to model path.
 
 Use <code>map</code>, <code>flatMap</code>, <code>orElseThrow</code>, and clear domain exceptions.
 
-## Final Rule
+## Keep Null At The Boundary
 
 Null should be rare and contained at boundaries: database driver, JSON parser, old API.
 
 Inside domain, absence is explicit or impossible. Anything else is delayed incident.
 
-## Related reading
 
 - [Java 25 Is Here: Why Your Java 8 Code Is an Embarrassment](/blog/java-25-is-here-why-your-java-8-code-is-an-embarrassment/)
 - [The $1 Million Bug: A Junior's Nightmare](/blog/one-million-dollar-bug-juniors-nightmare/)

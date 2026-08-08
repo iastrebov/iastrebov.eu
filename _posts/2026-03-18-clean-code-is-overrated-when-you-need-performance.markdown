@@ -73,13 +73,12 @@ CP teaches that constant factors matter. Enterprise teaches that humans maintain
 
 Clean code everywhere is dogma. Fast chaos everywhere is also dogma.
 
-## Final Rule
+## Earn The Ugly Optimization
 
 Write clean by default. Break rules only when profiler gives reason and tests give safety.
 
 Pretty slow code in trading path is not moral victory.
 
-## Related reading
 
 - [String Theory: Optimizing Memory In High-Load Systems](/blog/string-theory-optimizing-memory-high-load-systems/)
 - [Competitive Programming: Superpower Or Waste Of Time?](/blog/competitive-programming-superpower-or-waste-of-time/)

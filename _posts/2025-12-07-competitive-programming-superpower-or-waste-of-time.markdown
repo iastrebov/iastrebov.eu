@@ -72,13 +72,12 @@ Competitive programming is strong signal for raw problem solving, especially jun
 
 If candidate solves hard graph problem but cannot explain why global mutable map is risky in web service, we have work to do.
 
-## Final Answer
+## Keep The Contest Brain In Its Place
 
 Competitive programming is superpower when you treat it as gym, not religion. It trains mind. It does not replace engineering.
 
 Use speed. Keep precision. Then learn to build systems humans can maintain.
 
-## Related reading
 
 - [Your Roadmap Is Wrong: Stop Learning Syntax, Start Building](/blog/your-roadmap-is-wrong-stop-learning-syntax-start-building/)
 - [Why I Do Not Hire Framework Developers](/blog/why-i-dont-hire-framework-developers/)

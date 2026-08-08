@@ -83,13 +83,12 @@ When you understand tricky behavior, write it in project docs or test name. Futu
 
 Documentation reading is not private achievement. Convert it into team memory.
 
-## Final Rule
+## Verify Before You Paste
 
 If you cannot read docs, you are dependent developer. Dependent developers are easy to replace by next tutorial watcher.
 
 Read official material. Read source. Test small. Then decide. This is senior path.
 
-## Related reading
 
 - [Your Roadmap Is Wrong: Stop Learning Syntax, Start Building](/blog/your-roadmap-is-wrong-stop-learning-syntax-start-building/)
 - [The $1 Million Bug: A Junior's Nightmare](/blog/one-million-dollar-bug-juniors-nightmare/)

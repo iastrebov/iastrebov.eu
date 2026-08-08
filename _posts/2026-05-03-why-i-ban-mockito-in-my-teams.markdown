@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Why I Ban Mockito In My Teams"
+title: "Mockito Is Not A Testing Strategy"
 date: 2026-05-03 13:18:00 +0100
 categories: software engineering
 tags: [testing, mockito, testcontainers, java]
 excerpt_separator: <!--more-->
 greeting: "real dependencies beat fake comfort"
-description: "A deliberately strict testing post arguing against heavy Mockito usage and for Testcontainers-backed integration tests in Java services."
+description: "A strict argument against mock-heavy Java tests, with practical boundaries for Mockito and Testcontainers-backed integration testing."
 image:
   url: assets/images/blog/2026-05-03-why-i-ban-mockito-in-my-teams-cover.png
   alt: "Broken mock mannequins in a graveyard with a real glowing database engine descending"
 ---
-Mockito is useful library. I still ban heavy Mockito culture in teams.
+Mockito is useful library. A mock-heavy testing culture is not useful.
 
-Because once developers discover mock everything, tests stop checking behavior and start checking choreography. Then every refactor breaks tests while production bugs walk through front door.
+Once developers learn to fake every collaborator, tests stop checking behavior and start checking choreography. Then harmless refactors break the suite while database and transaction bugs walk through front door.
 
 <!--more-->
 
@@ -83,13 +83,12 @@ Good tests survive internal refactor. Mock-heavy tests often fail because method
 
 This makes developers afraid to improve design. Test suite becomes cage.
 
-## Final Rule
+## A Better Boundary
 
-I do not ban Mockito jar. I ban Mockito thinking.
+Keep Mockito for a boundary that is slow, costly, nondeterministic, or outside your control. Do not use it to erase the component whose behavior the test claims to verify.
 
-Use mocks as scalpel, not wallpaper. For serious backend, real database in tests is not luxury. It is adulthood.
+Mocks are scalpel, not wallpaper. For a serious backend, a real database in persistence tests is ordinary engineering, not luxury.
 
-## Related reading
 
 - [Stop Coding, Start Thinking: The True TDD Mindset](/blog/stop-coding-start-thinking-tdd-mindset/)
 - [Your 100% Test Coverage Is A Lie](/blog/your-100-percent-test-coverage-is-a-lie/)

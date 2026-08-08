@@ -95,13 +95,12 @@ Find request handlers with two or more independent I/O calls. Replace ad hoc fut
 
 Simple first. Fancy later.
 
-## Final Thought
+## Give Every Task A Lifetime
 
 Concurrency is hard because lifetime is hard. Java 25 gives better lifetime structure.
 
 Use it. Or keep chasing leaked tasks through logs like it is 2012.
 
-## Related reading
 
 - [Java 25 Is Here: Why Your Java 8 Code Is an Embarrassment](/blog/java-25-is-here-why-your-java-8-code-is-an-embarrassment/)
 - [String Theory: Optimizing Memory In High-Load Systems](/blog/string-theory-optimizing-memory-high-load-systems/)

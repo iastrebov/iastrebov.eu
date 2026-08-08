@@ -84,13 +84,12 @@ public record TransferResponse(
 
 Shape is obvious. No setter means response cannot be half-mutated by mapper mistake.
 
-## Final Rule
+## Put Records Where Data Is Data
 
 Stop writing ceremonial Java and then complaining Java is verbose.
 
 Modern Java gives you records. Use them where data is data, and spend attention on behavior that matters.
 
-## Related reading
 
 - [Java 25 Is Here: Why Your Java 8 Code Is an Embarrassment](/blog/java-25-is-here-why-your-java-8-code-is-an-embarrassment/)
 - [Why I Do Not Hire Framework Developers](/blog/why-i-dont-hire-framework-developers/)

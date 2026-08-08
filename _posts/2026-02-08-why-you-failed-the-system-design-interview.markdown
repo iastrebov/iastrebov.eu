@@ -59,13 +59,12 @@ How do you deploy? Roll back? Observe? Reprocess failed messages? Handle duplica
 
 Seniors talk about system after diagram exists.
 
-## Final Rule
+## Leave Reasoning On The Whiteboard
 
 System design interview is not test of how many technologies you can name.
 
 It is test of whether you can reason under ambiguity and make trade-offs explicit. Draw fewer boxes. Explain more consequences.
 
-## Related reading
 
 - [Microservices Are Not A Silver Bullet: You Probably Need A Monolith](/blog/microservices-are-not-a-silver-bullet/)
 - [Seniority Is Not About Years Of Experience](/blog/seniority-is-not-about-years-of-experience/)

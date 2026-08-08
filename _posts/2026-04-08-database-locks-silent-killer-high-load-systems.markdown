@@ -89,13 +89,12 @@ Separate reservation, external call, confirmation. Use saga or state machine.
 
 Track lock wait time, deadlocks, transaction duration, slow queries, and connection pool saturation. If app threads wait for database, your service latency explodes.
 
-## Final Rule
+## Design The Transaction Before The Method
 
 Concurrency is not only Java threads. Database is concurrent system with rules.
 
 Know those rules before money moves through it.
 
-## Related reading
 
 - [Master Structured Concurrency In Java 25](/blog/master-structured-concurrency-in-java-25/)
 - [Idempotency: How Not To Charge A Client Twice](/blog/idempotency-how-not-to-charge-a-client-twice/)

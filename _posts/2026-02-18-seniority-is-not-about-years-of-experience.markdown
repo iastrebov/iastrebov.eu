@@ -65,7 +65,7 @@ Responsibility without skill is management cosplay. Senior backend engineer must
 
 You do not need know everything. You need know enough to ask dangerous questions early.
 
-## My Definition
+## Count Uncertainty Removed
 
 Senior engineer reduces uncertainty for team.
 
@@ -73,7 +73,6 @@ They make system safer, juniors stronger, product decisions more honest, and inc
 
 Years help. They are not proof. Responsibility is proof.
 
-## Related reading
 
 - [10 Years In Big Tech: The Ugly Truth About Fintech](/blog/10-years-in-big-tech-ugly-truth-about-fintech/)
 - [The Anatomy Of A Perfect Code Review](/blog/anatomy-of-a-perfect-code-review/)

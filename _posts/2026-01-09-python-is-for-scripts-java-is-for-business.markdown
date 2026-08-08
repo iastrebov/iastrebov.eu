@@ -72,7 +72,6 @@ Use Python for discovery and automation. Use Java for core business systems wher
 
 Fast prototype is good. Fast prototype accidentally becoming core banking component is career lesson.
 
-## Related reading
 
 - [Java 25 Is Here: Why Your Java 8 Code Is an Embarrassment](/blog/java-25-is-here-why-your-java-8-code-is-an-embarrassment/)
 - [10 Years In Big Tech: The Ugly Truth About Fintech](/blog/10-years-in-big-tech-ugly-truth-about-fintech/)

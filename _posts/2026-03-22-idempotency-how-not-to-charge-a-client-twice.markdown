@@ -43,30 +43,25 @@ create table payment_requests (
 
 Unique constraint is boring and strong. Boring and strong is fintech aesthetic.
 
-## Java Transaction Shape
+## Keep The Network Outside The Database Transaction
+
+Do not keep a database transaction open while a payment provider decides whether to answer. First claim the idempotency key in a short transaction. Then call the provider using the same key, and persist the result in another short transaction.
 
 ~~~java
-@Transactional
 PaymentResult charge(ChargeCommand command) {
-    Optional<PaymentRequest> existing = requests.findByIdempotencyKey(command.idempotencyKey());
-    if (existing.isPresent()) {
-        return existing.get().toResult();
+    PaymentRequest request = requests.claim(command); // short transaction
+    if (request.hasFinalResult()) {
+        return request.toResult();
     }
 
-    try {
-        PaymentRequest request = requests.insertPending(command);
-        Payment payment = gateway.charge(command.accountId(), command.amount());
-        requests.markSucceeded(request.id(), payment.id());
-        return PaymentResult.success(payment.id());
-    } catch (DuplicateKeyException duplicate) {
-        return requests.findByIdempotencyKey(command.idempotencyKey())
-            .orElseThrow()
-            .toResult();
-    }
+    Payment payment = gateway.charge(
+        command.idempotencyKey(), command.accountId(), command.amount());
+
+    return requests.complete(request.id(), payment); // short transaction
 }
 ~~~
 
-Notice duplicate key handling. Two requests can race. Database is final referee.
+The unique constraint resolves racing claims. The provider key protects the remote side effect. A background reconciler must recover requests left in <code>PROCESSING</code> after a crash between the provider call and local completion.
 
 ## Store Original Response
 
@@ -86,13 +81,12 @@ Generating key on server after request arrives. Using Redis without durable stor
 
 Each mistake is possible duplicate charge.
 
-## Final Rule
+## The Retry Test
 
 Payment retries are inevitable. Double charge is optional.
 
 Make operation identity explicit, enforce it in database, and design response path for lost network replies. This is not advanced. This is minimum professional hygiene.
 
-## Related reading
 
 - [Python Is For Scripts, Java Is For Business](/blog/python-is-for-scripts-java-is-for-business/)
 - [Database Locks: The Silent Killer Of High-Load Systems](/blog/database-locks-silent-killer-high-load-systems/)

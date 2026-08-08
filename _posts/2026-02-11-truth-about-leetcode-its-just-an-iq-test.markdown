@@ -58,13 +58,12 @@ Then stop making it identity.
 
 Build real systems. Read production code. Learn SQL. Learn HTTP. Learn observability. Learn tests.
 
-## Final Verdict
+## Train The Signal, Not The Identity
 
 LeetCode is decent filter for raw reasoning and bad filter for full engineering maturity.
 
 If you pass it, good. If you only pass it, still not enough.
 
-## Related reading
 
 - [Competitive Programming: Superpower Or Waste Of Time?](/blog/competitive-programming-superpower-or-waste-of-time/)
 - [Why You Failed The System Design Interview](/blog/why-you-failed-the-system-design-interview/)

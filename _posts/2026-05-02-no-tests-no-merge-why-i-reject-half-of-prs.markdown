@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "No Tests, No Merge: Why I Reject Half of PRs"
+title: "No Tests, No Merge: The Evidence A Pull Request Owes You"
 date: 2026-05-02 09:14:00 +0100
 categories: software engineering
 tags: [tests, tdd, java, code-review]
 excerpt_separator: <!--more-->
 greeting: "strict gatekeeper mode"
-description: "Why pull requests without tests create instant technical debt, hidden fintech risk, and code review waste that senior engineers must reject."
+description: "Why pull requests without tests create immediate technical debt, hidden fintech risk, and review work that no confident approval can justify."
 image:
   url: assets/images/blog/2026-05-02-no-tests-no-merge-why-i-reject-half-of-prs-cover.png
   alt: "Red rejected stamp over a dark code review screen with failing test indicators"
 ---
 A pull request without tests is not almost done. It is a story with missing ending, and usually the ending is production incident.
 
-I reject many PRs for this reason. Not because I enjoy being difficult. Because code without executable proof is just opinion with syntax. In fintech this opinion can move money, duplicate money, lose money, or block customer from his own money. Very romantic, yes.
+A reviewer should reject a risky PR for this reason, not to perform toughness. Code without executable proof is opinion with syntax. In fintech, this opinion can duplicate money, lose money, or block a customer from their own account. Very romantic, yes.
 
 <!--more-->
 
@@ -98,13 +98,12 @@ No. Missing tests slow us down later, when nobody remembers why code exists. Tes
 
 Bad tests are bad. Slow tests are bad. Brittle tests are bad. This is not argument against tests. This is argument for writing better tests.
 
-## My Rule
+## The Merge Gate
 
 No tests, no merge. Exceptions exist for pure docs, obvious style-only cleanup, and throwaway experiments clearly marked as throwaway. Production code is different game.
 
 If you want trust, bring evidence. In engineering, evidence is test suite.
 
-## Related reading
 
 - [Stop Coding, Start Thinking: The True TDD Mindset](/blog/stop-coding-start-thinking-tdd-mindset/)
 - [Refactoring Without Tests Is Just Guessing](/blog/refactoring-without-tests-is-just-guessing/)

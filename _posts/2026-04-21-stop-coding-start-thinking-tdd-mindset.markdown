@@ -27,7 +27,7 @@ This pressure is uncomfortable. Good. Thinking before coding should be uncomfort
 
 ## Red: Write The Failure
 
-Imagine we need service that blocks withdrawals over daily limit.
+Suppose a service must block withdrawals over a daily limit.
 
 ~~~java
 class WithdrawalPolicyTest {
@@ -99,7 +99,7 @@ Test public behavior at useful boundary. For backend Java this is often service 
 
 Do not TDD CSS color. Do not TDD one-time migration script if cost is higher than value. But for business rules, money movement, concurrency, parsing, security, and refactoring legacy logic, TDD is cheaper than bravery.
 
-## The Real Mindset
+## Ask For Observable Behavior
 
 Before you code, ask: what observable behavior would make me confident?
 
@@ -107,7 +107,6 @@ Write that. Watch it fail. Make it pass. Clean the design. Repeat.
 
 This is boring loop. Boring loop builds serious systems.
 
-## Related reading
 
 - [No Tests, No Merge: Why I Reject Half of PRs](/blog/no-tests-no-merge-why-i-reject-half-of-prs/)
 - [Refactoring Without Tests Is Just Guessing](/blog/refactoring-without-tests-is-just-guessing/)

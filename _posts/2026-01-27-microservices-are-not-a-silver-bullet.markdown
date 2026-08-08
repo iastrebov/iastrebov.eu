@@ -82,9 +82,8 @@ Retries duplicate side effects. Timeouts hide slow dependencies. Circuit breaker
 
 Start with modular monolith. Keep boundaries honest. Write tests. Use events inside process where helpful. Extract service only when operational or organizational pressure is stronger than distributed complexity.
 
-Microservices are powerful tool. So is chainsaw. Beginners should not use chainsaw to cut sandwich.
+Microservices are a powerful tool. So is a chainsaw. Neither belongs in every job merely because it can cut through one.
 
-## Related reading
 
 - [Python Is For Scripts, Java Is For Business](/blog/python-is-for-scripts-java-is-for-business/)
 - [10 Years In Big Tech: The Ugly Truth About Fintech](/blog/10-years-in-big-tech-ugly-truth-about-fintech/)

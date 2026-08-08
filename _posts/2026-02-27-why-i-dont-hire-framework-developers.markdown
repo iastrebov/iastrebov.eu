@@ -69,13 +69,12 @@ Then use Spring Boot and appreciate it. Fundamentals first, leverage second.
 
 I ask: explain what happens from HTTP request hitting service to database commit. Strong candidate can draw path. Weak candidate names annotations.
 
-## Final Rule
+## Learn What The Framework Hides
 
 Framework knowledge is valuable. Framework dependence is weakness.
 
 Learn foundations. Then framework becomes multiplier instead of crutch.
 
-## Related reading
 
 - [Java 25 Is Here: Why Your Java 8 Code Is an Embarrassment](/blog/java-25-is-here-why-your-java-8-code-is-an-embarrassment/)
 - [Your Roadmap Is Wrong: Stop Learning Syntax, Start Building](/blog/your-roadmap-is-wrong-stop-learning-syntax-start-building/)

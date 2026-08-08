@@ -81,13 +81,12 @@ Saga without trace id, dashboard, retry count, and manual recovery tooling is fu
 
 Distributed transactions fail in partial states. You must see them.
 
-## Final Rule
+## Make Failure A Durable State
 
 Do not pretend distributed system can behave like one local database transaction.
 
 Model steps, make state durable, make retries idempotent, and design compensation like real product feature.
 
-## Related reading
 
 - [Microservices Are Not A Silver Bullet: You Probably Need A Monolith](/blog/microservices-are-not-a-silver-bullet/)
 - [Idempotency: How Not To Charge A Client Twice](/blog/idempotency-how-not-to-charge-a-client-twice/)

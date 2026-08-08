@@ -101,13 +101,12 @@ Find critical path. Add tests around externally visible behavior. Cover boundari
 
 Do not rewrite whole module because your IDE offered extraction menu.
 
-## Final Warning
+## Separate Cleanup From Behavior
 
 Pretty code that loses money is worse than ugly code that works.
 
 Your job is not to satisfy aesthetic hunger. Your job is to improve system without breaking contract. Tests are how you know difference.
 
-## Related reading
 
 - [No Tests, No Merge: Why I Reject Half of PRs](/blog/no-tests-no-merge-why-i-reject-half-of-prs/)
 - [Stop Coding, Start Thinking: The True TDD Mindset](/blog/stop-coding-start-thinking-tdd-mindset/)

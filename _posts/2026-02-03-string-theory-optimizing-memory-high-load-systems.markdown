@@ -32,8 +32,7 @@ Classic bad code:
 ~~~java
 String csv = "";
 for (Transaction tx : transactions) {
-    csv += tx.id() + "," + tx.amount() + "
-";
+    csv += tx.id() + "," + tx.amount() + "\n";
 }
 ~~~
 
@@ -47,8 +46,7 @@ for (Transaction tx : transactions) {
     csv.append(tx.id())
        .append(',')
        .append(tx.amount())
-       .append('
-');
+       .append('\n');
 }
 return csv.toString();
 ~~~
@@ -99,13 +97,12 @@ Look at allocation rate, not only CPU. Java Flight Recorder, async-profiler allo
 
 If service spends time allocating temporary request IDs, JSON fragments, cache keys, and log messages, latency will jitter under pressure.
 
-## Final Rule
+## Spend Optimization Where Traffic Goes
 
 Do not optimize every string. That is amateur performance theater.
 
 Find hot paths. Remove pointless allocation there. Keep normal code readable elsewhere. Production performance is not about cleverness. It is about spending attention where traffic actually goes.
 
-## Related reading
 
 - [Java 25 Is Here: Why Your Java 8 Code Is an Embarrassment](/blog/java-25-is-here-why-your-java-8-code-is-an-embarrassment/)
 - [Master Structured Concurrency In Java 25](/blog/master-structured-concurrency-in-java-25/)

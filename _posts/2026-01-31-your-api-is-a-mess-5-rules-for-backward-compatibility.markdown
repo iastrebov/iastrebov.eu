@@ -81,13 +81,12 @@ Keep contract tests. Run consumer tests. Validate old payloads against new code 
 
 API compatibility is not document promise. It is executable check.
 
-## Final Rule
+## Compatibility Is A Release Feature
 
 API is not your private DTO. It is contract with other humans and systems.
 
 Evolve it like bridge under traffic: slowly, visibly, and without dropping cars into river.
 
-## Related reading
 
 - [The Works On My Machine Excuse Ends Here](/blog/works-on-my-machine-excuse-ends-here/)
 - [The Anatomy Of A Perfect Code Review](/blog/anatomy-of-a-perfect-code-review/)

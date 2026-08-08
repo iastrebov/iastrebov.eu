@@ -100,11 +100,10 @@ The bug was not NullPointerException. The bug was lack of defensive thinking aro
 
 Null just opened door.
 
-## Final Rule
+## Protect The Invariant In The Database
 
 Financial code must assume retries, duplicates, partial failures, and weird input. If your happy-path method cannot survive that, it is not production code yet.
 
-## Related reading
 
 - [Refactoring Without Tests Is Just Guessing](/blog/refactoring-without-tests-is-just-guessing/)
 - [How To Read Documentation Like A Senior Engineer](/blog/how-to-read-documentation-like-a-senior-engineer/)

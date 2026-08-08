@@ -87,7 +87,6 @@ Pin runtime version. Build immutable image. Run tests in CI. Validate config. Ex
 
 Now when something breaks, at least you debug real problem, not snowflake laptop fairy tale.
 
-## Related reading
 
 - [10 Years In Big Tech: The Ugly Truth About Fintech](/blog/10-years-in-big-tech-ugly-truth-about-fintech/)
 - [Burnout Is For Those Who Cannot Say No](/blog/burnout-is-for-those-who-cant-say-no/)

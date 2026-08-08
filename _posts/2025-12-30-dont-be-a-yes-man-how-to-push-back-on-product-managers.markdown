@@ -57,13 +57,12 @@ If team accepts risk, write it. Not as threat. As memory.
 
 Written trade-off prevents future amnesia.
 
-## Final Rule
+## Make The Risk Negotiable
 
 A yes man is not helpful. He is delayed failure.
 
 Be direct, calm, and practical. Say no to unsafe path, then show safer path forward.
 
-## Related reading
 
 - [Seniority Is Not About Years Of Experience](/blog/seniority-is-not-about-years-of-experience/)
 - [Burnout Is For Those Who Cannot Say No](/blog/burnout-is-for-those-who-cant-say-no/)

@@ -82,7 +82,6 @@ No tests, no merge. Unclear failure behavior, no merge. Dangerous retry, no merg
 
 Protect production. Ego can wait outside.
 
-## Related reading
 
 - [No Tests, No Merge: Why I Reject Half of PRs](/blog/no-tests-no-merge-why-i-reject-half-of-prs/)
 - [Seniority Is Not About Years Of Experience](/blog/seniority-is-not-about-years-of-experience/)

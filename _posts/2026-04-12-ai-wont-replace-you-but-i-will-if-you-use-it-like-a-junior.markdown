@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "AI Won't Replace You, But I Will If You Use It Like A Junior"
+title: "AI Coding Without Judgment Ships Bugs Faster"
 date: 2026-04-12 12:31:00 +0100
 categories: software engineering
 tags: [ai, career, testing, engineering]
 excerpt_separator: <!--more-->
 greeting: "use tools with tests"
-description: "A strict take on AI coding tools: seniors use AI to accelerate known work, juniors use it blindly and ship bugs faster."
+description: "A strict guide to AI coding tools: use executable constraints, verify unfamiliar APIs, and review generated code harder than familiar code."
 image:
   url: assets/images/blog/2026-04-12-ai-wont-replace-you-but-i-will-if-you-use-it-like-a-junior-cover.png
   alt: "Cyberpunk robot guiding a developer using a glowing wrench beside code tests"
 ---
-AI will not replace good engineers tomorrow. But engineers who use AI to produce code they do not understand are volunteering for replacement.
+Predictions about AI replacing engineers are cheap. A more immediate problem is already visible: engineers can now produce code they do not understand at much higher speed.
 
 Tool is not problem. Blind trust is problem.
 
@@ -75,13 +75,12 @@ If your value is typing boilerplate, AI is threat.
 
 If your value is understanding systems, defining constraints, preventing incidents, and mentoring people, AI is tool.
 
-## Final Rule
+## Constraints Before Autocomplete
 
 Use AI as amplifier, not autopilot. Amplifier makes strong signal stronger and bad signal louder.
 
 Bring tests. Bring judgment. Otherwise you are just faster junior with expensive autocomplete.
 
-## Related reading
 
 - [No Tests, No Merge: Why I Reject Half of PRs](/blog/no-tests-no-merge-why-i-reject-half-of-prs/)
 - [Seniority Is Not About Years Of Experience](/blog/seniority-is-not-about-years-of-experience/)

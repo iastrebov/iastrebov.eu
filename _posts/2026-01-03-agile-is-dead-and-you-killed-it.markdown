@@ -57,13 +57,12 @@ Shorten feedback loop. Ship smaller. Keep trunk healthy. Automate tests. Refacto
 
 Stop worshiping process. Use process only where it helps thinking.
 
-## Final Thought
+## Kill Ritual, Shorten Feedback
 
 Agile died when companies made it safe for managers and useless for engineers.
 
 Bring back working software, technical excellence, and honest trade-offs. Everything else is sticky-note dance.
 
-## Related reading
 
 - [Seniority Is Not About Years Of Experience](/blog/seniority-is-not-about-years-of-experience/)
 - [Don't Be A Yes Man: How To Push Back On Product Managers](/blog/dont-be-a-yes-man-how-to-push-back-on-product-managers/)

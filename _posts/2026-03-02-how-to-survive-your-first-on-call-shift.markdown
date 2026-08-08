@@ -61,13 +61,12 @@ It connects code to consequence. Suddenly bad logs matter. Slow queries matter. 
 
 Good on-call culture turns pain into system improvement.
 
-## Final Rule
+## A Boring 3 AM Plan
 
 At 3 AM, be boring. Read alert. Check dashboards. Communicate. Roll back when needed. Escalate early.
 
 Hero debugging is for movies. Production wants calm process.
 
-## Related reading
 
 - [10 Years In Big Tech: The Ugly Truth About Fintech](/blog/10-years-in-big-tech-ugly-truth-about-fintech/)
 - [Burnout Is For Those Who Cannot Say No](/blog/burnout-is-for-those-who-cant-say-no/)

@@ -109,13 +109,12 @@ Do not upgrade runtime on Friday and pray. Build path: update dependencies, run 
 
 Legacy platform with no tests is hostage situation. First add tests around risky flows, then upgrade.
 
-## The Embarrassment Part
+## Upgrade Without Theatre
 
 Using Java 8 in 2026 may be forced by vendor or platform constraints. Fine. But writing Java 8 style on Java 25 because you did not learn last decade? That is embarrassing.
 
 Language moved. JVM moved. Production expectations moved. You should move also.
 
-## Related reading
 
 - [Microservices Are Not A Silver Bullet: You Probably Need A Monolith](/blog/microservices-are-not-a-silver-bullet/)
 - [Master Structured Concurrency In Java 25](/blog/master-structured-concurrency-in-java-25/)

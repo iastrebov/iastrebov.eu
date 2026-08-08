@@ -49,13 +49,12 @@ Add test. Add validation. Add safer default. Add feature flag. Improve alert. Ma
 
 Culture improves when system improves.
 
-## Final Rule
+## Turn History Into A Guardrail
 
 Use git blame to learn history, not assign shame.
 
 Production reliability comes from stronger systems, not louder finger pointing.
 
-## Related reading
 
 - [The Anatomy Of A Perfect Code Review](/blog/anatomy-of-a-perfect-code-review/)
 - [Agile Is Dead, And You Killed It](/blog/agile-is-dead-and-you-killed-it/)

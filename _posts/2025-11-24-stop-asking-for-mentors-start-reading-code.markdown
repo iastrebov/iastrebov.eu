@@ -57,13 +57,12 @@ Good mentor helps you ask better questions. But mentor cannot install curiosity.
 
 If you come with "teach me Java", weak. If you come with "I traced Spring transaction proxy and do not understand self-invocation; can we discuss?", strong.
 
-## Final Rule
+## Bring A Better Question
 
 Stop waiting for senior to pour knowledge into head.
 
 Read code. Run code. Break code. Debug code. Then ask precise questions. This is how real learning compounds.
 
-## Related reading
 
 - [Your Roadmap Is Wrong: Stop Learning Syntax, Start Building](/blog/your-roadmap-is-wrong-stop-learning-syntax-start-building/)
 - [How To Read Documentation Like A Senior Engineer](/blog/how-to-read-documentation-like-a-senior-engineer/)

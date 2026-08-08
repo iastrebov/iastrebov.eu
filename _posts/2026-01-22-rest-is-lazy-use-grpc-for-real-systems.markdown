@@ -80,13 +80,12 @@ gRPC adds tooling, Protobuf discipline, gateway story for browsers, and differen
 
 But neither is REST. JSON endpoint with no schema, no versioning, and random nulls is not architecture.
 
-## Final Rule
+## Choose From Constraints
 
 Choose protocol. Do not inherit it from tutorial.
 
 If communication is internal, high-volume, and strongly typed, gRPC may be the adult option. REST is fine when you choose it with eyes open.
 
-## Related reading
 
 - [Microservices Are Not A Silver Bullet: You Probably Need A Monolith](/blog/microservices-are-not-a-silver-bullet/)
 - [Your API Is A Mess: 5 Rules For Backward Compatibility](/blog/your-api-is-a-mess-5-rules-for-backward-compatibility/)

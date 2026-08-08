@@ -97,13 +97,12 @@ Track mutation testing for core logic. Track integration coverage around databas
 
 Production does not care about line percentage. Production cares about behavior.
 
-## Final Rule
+## Ask Which Bug This Test Kills
 
 Use coverage as smoke alarm, not scoreboard.
 
 A strict engineer asks: what bug would this test catch? If answer is "not sure", delete or rewrite it.
 
-## Related reading
 
 - [No Tests, No Merge: Why I Reject Half of PRs](/blog/no-tests-no-merge-why-i-reject-half-of-prs/)
 - [Stop Coding, Start Thinking: The True TDD Mindset](/blog/stop-coding-start-thinking-tdd-mindset/)

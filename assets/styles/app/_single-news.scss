@@ -59,6 +59,19 @@
   }
 }
 
+.post-disclosure {
+  border-left: rem(3px) solid var(--color-accent);
+  color: var(--color-paragraph);
+  font-size: rem(13px);
+  line-height: 1.6;
+  margin-bottom: rem(40px);
+  padding: rem(12px) rem(16px);
+
+  a {
+    color: var(--color-accent);
+  }
+}
+
 .gallery-post {
   @include flex($wrap: wrap);
   margin-left: rem(-16px);

@@ -18,6 +18,11 @@ layout: default
             <img class="cover lazyload" src="{{ post_image | relative_url }}" alt="{{ page.image.alt | default: page.title }}"/>
         </div>
     </header>
+    <aside class="post-disclosure" aria-label="AI-assisted writing disclosure">
+        The questions, opinions, and experience behind this post are mine; AI helps me shape and edit it.
+        <a href="{{ '/blog/ai-supervised-human-owned/' | relative_url }}">How this blog is written.</a>
+    </aside>
+
     {{ content }}
 </div>
 

@@ -44,9 +44,12 @@ navigation:
   - title: Resume
     page: /resume.html
     url: /resume
-  - title: Blog
+  - title: AI-Written Blog
     page: /blog.html
     url: /blog
+  - title: AI Note
+    page: /blog/ai-supervised-human-owned/
+    url: /blog/ai-supervised-human-owned
   - title: Contact
     page: /contact.html
     url: /contact

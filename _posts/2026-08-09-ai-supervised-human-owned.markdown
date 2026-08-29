@@ -1,30 +1,32 @@
 ---
 layout: post
-title: "This Blog Is AI-Supervised, but the Experience Is Mine"
+title: "This AI-Written Blog Is Not AI Slop"
 date: 2026-08-09 10:00:00 +0100
 categories: software engineering
 tags: [ai, writing, engineering, transparency]
 excerpt_separator: <!--more-->
 greeting: hello
-description: "An honest explanation of how AI helps shape this engineering blog while its questions, opinions, practical lessons, and responsibility remain mine."
+description: "This AI-written blog is not AI slop: its questions, opinions, and experience are mine, while AI helps package them into clear articles."
 image:
   url: assets/images/blog/2026-08-09-ai-supervised-human-owned-cover.png
   alt: A handwritten engineering notebook beneath a precise translucent digital editorial layer
 ---
 
-Every article on this blog is AI-supervised. That sentence is easy to read in the worst possible way: content farm, traffic bait, SEO text generated around keywords nobody cares about.
+This is an AI-written blog. Every article is AI-supervised, and AI helps turn my material into the text you read. I prefer to say this directly instead of hiding the tool behind vague words.
 
-This is not what I am building.
+But this is not AI slop.
 
-The questions are mine. They come from subjects I wanted to understand, problems I met in engineering, issues I saw around me, and lessons I collected from experience. AI helps me wrap those thoughts into an article that another person can follow.
+The questions are mine. The opinions are mine. The experience is mine. It comes from subjects I wanted to understand, problems I met in engineering, issues I saw around me, and lessons I collected on my path. AI helps package this material into articles I can share with you.
 
 <!--more-->
 
-## AI-Supervised Does Not Mean AI-Originated
+## Why This AI-Written Blog Is Not AI Slop
 
-There is important difference between the source of an idea and the tool used to present it.
+AI slop starts with a machine's ability to produce cheap text and works backward to find something to publish. There is no real question, experience, or responsibility underneath. The page exists because generating another page costs almost nothing.
 
-The source here is my curiosity and experience. I decide which question deserves attention, what position I take, which details matter, and what should survive the final edit. AI can help organize rough notes, expose repetition, improve wording, and turn an unfinished explanation into a readable path.
+This blog starts in the opposite place. First comes a question I care about, an issue I have seen, an opinion I want to test, or experience I want to preserve. Only then does AI help me organize rough notes, expose repetition, improve wording, and turn an unfinished explanation into a readable path.
+
+There is important difference between the source of an article and the tool used to present it. AI may write and edit sentences, but it does not supply my path. It packages the path so another person can follow it.
 
 It does not get to manufacture a career for me. It should not invent an incident, a benchmark, or certainty that I do not have. If a statement appears under my name, responsibility for it is also mine. “AI wrote it” is not an escape hatch.
 
@@ -54,11 +56,11 @@ This is why supervision matters. The work is not finished when text becomes flue
 
 You may still disagree with me. Good. This blog should show a path, not issue commandments from machine-polished stone. Test the advice against your system, your team, and your constraints.
 
-So this is the compact contract behind every post:
+So this is the compact contract behind every AI-written post:
 
 - the interests, questions, opinions, and experience are mine;
-- AI helps structure, edit, and present them;
+- AI helps write, structure, edit, and package them;
 - I remain responsible for what gets published;
 - usefulness matters more than traffic.
 
-AI is in the workshop. It is not the reason the workshop exists.
+AI is in the workshop, and I do not hide it. But it is not the reason the workshop exists.

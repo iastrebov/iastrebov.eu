@@ -73,7 +73,7 @@ A senior engineer does not say "but ops changed something" and walk away. A seni
 
 Docker is packaging. Kubernetes is scheduling. Neither saves bad app.
 
-If your service logs nothing useful, ignores SIGTERM, stores local state in container filesystem, and needs manual click to initialize schema, container only makes failure portable.
+A container cannot fix useless logs, ignored SIGTERM, or local state stored in its filesystem. It cannot replace automated schema setup either. It only makes these failures portable.
 
 ## Production Ownership
 
@@ -83,7 +83,9 @@ The job is not to make app pass on laptop. The job is to make app boring in prod
 
 ## Simple Checklist
 
-Pin runtime version. Build immutable image. Run tests in CI. Validate config. Expose health endpoint. Log request correlation id. Document required ports and dependencies. Practice rollback.
+Pin runtime version. Build immutable image. Run tests in CI. Validate config.
+
+Expose health endpoint. Log request correlation id. Document required ports and dependencies. Practice rollback.
 
 Now when something breaks, at least you debug real problem, not snowflake laptop fairy tale.
 

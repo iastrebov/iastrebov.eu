@@ -27,7 +27,7 @@ Check file signatures with a maintained parser, then decode and re-encode images
 
 Generate an opaque storage key. Keep the original filename only as sanitized display metadata. Store files outside the application web root or behind a separate object-storage download path.
 
-Serve downloads with a safe `Content-Disposition` and an explicit content type. Do not let an uploaded HTML or SVG file execute under your trusted origin unless that is a deliberately sandboxed feature.
+Serve downloads with a safe `Content-Disposition` and an explicit content type. Keep uploaded HTML or SVG from executing under your trusted origin. If execution is required, isolate it in a deliberately sandboxed feature.
 
 ## Bound Every Resource
 

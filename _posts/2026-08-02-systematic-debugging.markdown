@@ -16,7 +16,7 @@ Random changes sometimes make a bug disappear. They also destroy evidence and te
 
 <!--more-->
 
-First, make the symptom precise. Which request, input, version, environment, and time window fail? What should happen, and what happens instead? “The service is slow” becomes useful only after latency is tied to an endpoint, percentile, region, dependency, or resource condition.
+First, make the symptom precise. Which request, input, version, environment, and time window fail? What should happen, and what happens instead? A useful latency report names the affected endpoint, percentile, region, dependency, or resource condition.
 
 Build a timeline before building a theory. Compare deploys, configuration changes, traffic shifts, dependency events, and the first known failure. Correlation is not causation, but it narrows the search and prevents memory from rewriting the sequence.
 

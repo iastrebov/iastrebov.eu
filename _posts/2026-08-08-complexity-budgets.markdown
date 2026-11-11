@@ -24,6 +24,6 @@ Account for multiplicative placement. A query that costs five milliseconds looks
 
 Use benchmarks after the model, not instead of it. Benchmark representative distributions and sizes, warm up managed runtimes appropriately, and consume results so the compiler cannot remove work. A microbenchmark cannot predict network contention or a production heap, but it can test a specific assumption about an implementation.
 
-Write the accepted limits near the interface and enforce them. Reject an unbounded page size, cap a top-K request, stream a large export, or move expensive work off the request path. Monitoring should reveal when real inputs approach the assumption that justified the design.
+Write the accepted limits near the interface and enforce them. Choose controls for the operation. Reject unbounded page sizes or cap top-K requests. For large exports, stream data or move work off the request path. Monitoring should reveal when real inputs approach the assumption that justified the design.
 
 Optimization is a trade. A more complex structure creates maintenance and correctness costs, so spend that complexity where the budget proves it necessary. The practical question is not “Which algorithm is theoretically fastest?” It is “Which simple design remains safely within its resource envelope as the workload grows?”

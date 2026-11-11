@@ -22,8 +22,8 @@ Build once. Recompiling independently in every job wastes time and creates the p
 
 Caching helps only when correctness is explicit. Key dependency caches by lockfile and toolchain inputs. Do not cache ambiguous build output merely because it is expensive. A stale cache that produces an impossible failure destroys more confidence than it saves minutes.
 
-Use test selection carefully. Running tests affected by a change can speed pull-request feedback, but the dependency map will sometimes be incomplete. Keep a full suite on a schedule or before final promotion, and monitor whether selective runs miss failures later found by the complete suite.
+Use test selection carefully. Running tests affected by a change can speed pull-request feedback, but the dependency map will sometimes be incomplete. Run the full suite on a schedule or before final promotion. Track failures it finds that selective runs missed.
 
 Flaky tests are latency multipliers. A retry can distinguish intermittent behavior, but it should also record and quarantine the test for repair. Otherwise the pipeline becomes green by attrition. The deeper remediation is covered in [flaky tests are production bugs in the feedback system](/blog/flaky-tests-debugging/).
 
-Set a feedback budget for each layer and treat regressions like performance regressions in a service. CI is part of the development system; when it becomes slow or untrusted, teams compensate with larger changes and fewer runs, exactly when fast feedback is most valuable.
+Set a feedback budget for each layer and treat regressions like performance regressions in a service. CI is part of the development system. When it becomes slow or untrusted, teams compensate with larger changes and fewer runs. That is exactly when fast feedback matters most.

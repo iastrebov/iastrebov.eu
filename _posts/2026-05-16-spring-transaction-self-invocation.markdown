@@ -51,7 +51,7 @@ public void settle(Batch batch) {
 
 One use case, one transaction. Helper methods do not need annotations.
 
-If the inner operation genuinely needs a separate boundary, move it to a separate bean with a name that explains why. `REQUIRES_NEW` is not a patch for self-invocation; it changes atomicity and must be justified as business behavior.
+If the inner operation genuinely needs a separate boundary, move it to a separate bean with a name that explains why. `REQUIRES_NEW` cannot fix a call that bypasses the proxy. It also changes atomicity, so the business behavior must justify a separate transaction.
 
 ## Prove It With State, Not Logs
 

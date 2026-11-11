@@ -31,7 +31,7 @@ Only perform the business change when this insert claims a new ID, inside the sa
 
 ## Idempotent State Transitions Are Better
 
-Sometimes the natural operation is repeatable: set order status to a specific version, upsert a snapshot if newer, or create a row under a unique event key.
+Some operations are naturally repeatable. Examples include setting order status to a specific version, upserting a newer snapshot, or creating a row under a unique event key.
 
 “Increment balance by 10” is not naturally idempotent. It needs event identity or a ledger entry constraint.
 

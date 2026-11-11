@@ -16,6 +16,8 @@ Sorting every item to keep the largest ten is wasteful when the input contains m
 
 <!--more-->
 
+This example requires `K > 0`. For `K = 0`, return an empty result before the loop. Reject negative values.
+
 For each item, add it while the heap contains fewer than `K` elements. After that, compare it with the root. If it is no better, discard it. If it is better, replace the root.
 
 ```java

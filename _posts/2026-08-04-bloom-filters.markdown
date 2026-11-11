@@ -26,4 +26,4 @@ Standard Bloom filters do not support safe deletion. Clearing one bit can erase 
 
 Distribution adds lifecycle questions. Which filter version does a node hold? Can a stale filter cause a false negative for newly created data? One safe pattern is to treat uncertain freshness as “maybe present,” preserving the backing lookup. Rebuilds can be published immutably and swapped atomically.
 
-Use a Bloom filter when negative lookups are common, the backing check is expensive, and an occasional extra check is harmless. If exact membership is required or the set is small, a normal hash set is simpler and usually the better engineering decision.
+Use a Bloom filter when negative lookups are common and the backing check is expensive. An occasional unnecessary lookup must be harmless. If exact membership is required or the set is small, a normal hash set is simpler and usually the better engineering decision.

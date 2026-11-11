@@ -77,7 +77,7 @@ That distinction matters. An `AtomicReference<Configuration>` that swaps complet
 
 JPA entities have lifecycle and identity. Forcing complete immutability can fight the persistence tool. The useful target is not “every class is record.” The useful target is no arbitrary mutation.
 
-Give an entity methods such as `approve`, `cancel`, or `changeAddress`; keep setters private or absent; validate transitions inside those methods. Return immutable DTOs at the API boundary.
+Give an entity methods such as `approve`, `cancel`, or `changeAddress`. Keep setters private or absent. Validate transitions inside those methods. Return immutable DTOs at the API boundary.
 
 ## Look For Reference Leaks
 

@@ -30,7 +30,7 @@ order by created_at;
 
 `(merchant_id, status, created_at)` is a sensible candidate: two equality conditions narrow the tree before the range and ordering column.
 
-Change the workload and the answer changes. A query filtering only `status` cannot efficiently seek through an index beginning with `merchant_id`. A low-cardinality status may also be poor standalone key.
+Change the workload and the answer changes. A query filtering only `status` may need to scan much of an index beginning with `merchant_id`. PostgreSQL 18 can use [B-tree skip scan](https://www.postgresql.org/docs/18/indexes-multicolumn.html) when the omitted leading column has few distinct values. Verify the actual plan instead of treating the leftmost-prefix rule as absolute. A low-cardinality status may also be poor standalone key.
 
 ## Query Order Is Not Index Order
 

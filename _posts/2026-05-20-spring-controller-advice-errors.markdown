@@ -47,7 +47,7 @@ An unexpected `NullPointerException` should not be translated into 404 because i
 
 ## Log Once At The Owning Boundary
 
-Client mistakes usually need metrics, not error stack traces. Unexpected failures need the cause and request context in internal logs. Avoid logging the same exception in repository, service, controller, and global handler; four stack traces do not create four times more evidence.
+Client mistakes usually need metrics, not error stack traces. Unexpected failures need the cause and request context in internal logs. Log the exception once at its owning boundary. Repeating it in repository, service, controller, and global handler creates noise instead of more evidence.
 
 Test response status, code, and safe fields. Treat changes as API evolution. Renaming `ACCOUNT_NOT_FOUND` can break a client even when JSON still parses.
 

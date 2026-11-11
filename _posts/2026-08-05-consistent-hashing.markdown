@@ -20,7 +20,7 @@ Hash each key to a point on the ring and assign it to the next node clockwise. A
 
 One point per physical node usually distributes unevenly, especially with a small cluster. Virtual nodes place each physical node at many points around the ring. They smooth the distribution and allow a larger machine to receive more points than a smaller one. The tradeoff is a larger routing table and more ownership fragments to manage.
 
-Consistent hashing also says nothing about replication. A storage system may assign the next distinct nodes on the ring as replicas, but it must define failure-domain separation, consistency behavior, and repair after membership changes. A cache client may only need deterministic routing and tolerate loss.
+Consistent hashing also says nothing about replication. A storage system may assign the next distinct nodes on the ring as replicas. It must also define failure-domain separation, consistency behavior, and repair after membership changes. A cache client may only need deterministic routing and tolerate loss.
 
 Hot keys remain hot. A perfect distribution of key counts cannot divide one celebrity key that receives half the traffic. Replication, request coalescing, local caching, or application-level partitioning must address that workload separately.
 

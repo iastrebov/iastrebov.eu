@@ -26,4 +26,4 @@ Keep scope under control. A review of a small feature should not become a demand
 
 Move high-bandwidth disagreements out of the comment thread. Ten rounds of text often mean the participants need a short conversation, a sketch, or a focused design note. Return afterward with the decision and rationale so the review remains understandable.
 
-Reviewers should also notice good decisions—briefly and specifically. Recognition tells the author which judgment to repeat. Over time, this makes review less about defect inspection and more about distributing system knowledge, one reason healthy [code ownership](/blog/code-ownership/) never depends on a single gatekeeper.
+Reviewers should also notice good decisions—briefly and specifically. Recognition tells the author which judgment to repeat. Over time, review also distributes system knowledge. That is one reason healthy [code ownership](/blog/code-ownership/) never depends on a single gatekeeper.

@@ -29,7 +29,7 @@ Define eligibility explicitly. Health checks, client cancellations, and invalid 
 
 ## The Objective Creates A Budget
 
-A 99.9% monthly objective permits roughly 43 minutes of unavailability in a 30-day month. That allowance is the error budget. Spend it on deploys, experiments, dependency failures, and mistakes—but spend it consciously.
+For a time-based availability SLO, 99.9% permits roughly 43 minutes of unavailability in a 30-day month. A request-based SLO instead budgets 0.1% of eligible requests as failures. Those measures differ when traffic varies. [Define the SLI before calculating its budget](https://sre.google/sre-book/service-level-objectives/). Spend it on deploys, experiments, dependency failures, and mistakes—but spend it consciously.
 
 When burn is fast, slow releases and fund reliability work. When the budget is healthy, do not demand imaginary perfection. A target of 100% usually produces either paralysis or dishonest measurement.
 

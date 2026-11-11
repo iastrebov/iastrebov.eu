@@ -33,7 +33,7 @@ Some local times never occur during a spring transition. Others occur twice in a
 
 Avoid `LocalDateTime` for events that already happened unless a separate zone or offset is stored. Avoid server-default zones in application logic; they change across laptops, containers, and deployments.
 
-Time is a domain type. Choose the type that matches the statement, then test around zone transitions and date boundaries instead of adding UTC as magic suffix.
+Time is a domain type. Choose the type that matches the statement. Test zone transitions and date boundaries. Adding UTC as magic suffix does not fix the model.
 
 
 - [The Works On My Machine Excuse Ends Here](/blog/works-on-my-machine-excuse-ends-here/)

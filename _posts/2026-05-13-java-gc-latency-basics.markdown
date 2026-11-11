@@ -46,7 +46,7 @@ The guard matters when argument construction itself is expensive.
 
 A tiny heap collects constantly. A huge heap may hide growth for longer, consume container headroom, and change pause behavior. More heap is not automatically more performance.
 
-Inside a container, verify the JVM sees the intended memory limit and leave space for thread stacks, direct buffers, metaspace, native libraries, and the operating environment. Heap is not whole process.
+Inside a container, verify that the JVM sees the intended memory limit. Reserve additional memory for thread stacks, direct buffers, metaspace, native libraries, and the operating environment. Heap is not whole process.
 
 ## Read Distribution, Not Average
 

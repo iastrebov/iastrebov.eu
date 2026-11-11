@@ -55,7 +55,6 @@ Every state must be durable. Every transition idempotent. Every retry safe.
 ## Java Shape
 
 ~~~java
-@Transactional
 void handle(PaymentSaga saga) {
     switch (saga.state()) {
         case PENDING -> reserveFunds(saga);
@@ -67,7 +66,9 @@ void handle(PaymentSaga saga) {
 }
 ~~~
 
-This is simplified, but important part is explicit state.
+This orchestrator runs outside a database transaction. Each local state change needs its own short transaction. External steps need idempotent dispatch and durable recovery.
+
+The example shows dispatch only. Each handler must validate and persist its transition; the switch alone does not make the saga durable.
 
 ## Compensation Is Not Undo
 

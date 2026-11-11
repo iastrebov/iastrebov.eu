@@ -12,7 +12,7 @@ image:
   alt: A branching prefix tree guiding an input path toward ranked completion candidates
 ---
 
-A hash map answers exact lookup well. Autocomplete asks a different question: which stored terms begin with this prefix? A trie represents each character as an edge, so reaching the prefix node takes time proportional to the prefix length rather than the number of stored terms.
+A hash map answers exact lookup well. Autocomplete asks a different question: which stored terms begin with this prefix? A trie represents each character as an edge. Reaching the prefix node takes time proportional to prefix length, independent of the number of stored terms.
 
 <!--more-->
 

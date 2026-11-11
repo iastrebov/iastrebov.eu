@@ -99,13 +99,15 @@ For tiny examples difference looks small. In real domain classification logic, m
 
 ## Why Java 8 Code Ages Badly
 
-Java 8 codebases often carry old habits: mutable DTOs everywhere, null as control flow, anonymous complexity, no records, no switch expressions, no virtual threads, no modern pattern matching.
+Java 8 codebases often carry old habits: mutable DTOs everywhere, null as control flow, and anonymous complexity. They also miss records, switch expressions, virtual threads, and modern pattern matching.
 
 Then same team complains Java is verbose. No, your Java is verbose. There is difference.
 
 ## Migration Is Engineering, Not Big Bang
 
-Do not upgrade runtime on Friday and pray. Build path: update dependencies, run test suite, enable modern compiler, migrate one module, measure performance, repeat.
+Do not upgrade runtime on Friday and pray. Update dependencies. Run test suite. Enable modern compiler. Migrate one module. Measure performance.
+
+Repeat for the next module.
 
 Legacy platform with no tests is hostage situation. First add tests around risky flows, then upgrade.
 

@@ -19,7 +19,9 @@ Tool is not problem. Blind trust is problem.
 
 ## Junior Use Of AI
 
-Junior prompt: "Build payment retry service." AI returns plausible code. Junior pastes. Tests? Maybe generated. Understanding? Thin. Edge cases? Unknown.
+Junior prompt: "Build payment retry service." AI returns plausible code. Junior pastes.
+
+Tests? Maybe generated. Understanding? Thin. Edge cases? Unknown.
 
 Now team owns confident bug machine.
 
@@ -65,7 +67,7 @@ Check assumptions. Delete unnecessary abstraction. Verify library APIs. Run test
 
 ## Where AI Is Wonderful
 
-I like AI for scaffolding repetitive tests, producing alternative names, summarizing docs, creating first version of README, generating data builders, or translating ugly SQL into readable explanation.
+I like AI for scaffolding repetitive tests, suggesting names, summarizing docs, and drafting README files. It also helps generate data builders or explain ugly SQL.
 
 This saves energy for decisions only engineer can own.
 

@@ -13,7 +13,7 @@ image:
 ---
 `CompletableFuture` moves work away from the current call stack. It does not move responsibility away with it.
 
-Most bad future code fails in one of two directions: it hides an exception and returns a fake fallback, or it lets sibling work continue after the request has already failed.
+Bad future code often hides an exception behind a fake fallback. It can also leave sibling work running after the request has failed.
 
 <!--more-->
 

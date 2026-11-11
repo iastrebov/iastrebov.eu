@@ -23,7 +23,7 @@ Modern Java stores <code>String</code> as immutable object backed by byte array 
 
 Immutability is useful. It enables safe sharing, hash caching, and string pool behavior. It also means every "change" creates another object.
 
-The string pool stores interned string instances, mostly literals and explicit <code>intern()</code> results. Do not treat it as free compression machine. Interning unbounded user data is memory leak with nice API.
+The string pool stores interned string instances, mostly literals and explicit <code>intern()</code> results. Do not treat it as free compression machine. Interning unbounded user data is not a memory limit. Measure retained strings and interning overhead before treating it as compression.
 
 ## The Loop That Burns Heap
 

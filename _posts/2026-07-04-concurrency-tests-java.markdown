@@ -17,16 +17,19 @@ Starting two threads and sleeping 50 ms does not guarantee a race. It guarantees
 
 ## Force The Interesting Interleaving
 
-Use latches or barriers so both workers read the same initial state before either writes. Then release them together and assert the durable invariant.
+Use latches or barriers at the read/write boundary to force the interesting interleaving. Assert the durable invariant afterward.
+
+This starting barrier aligns worker launches. It does not guarantee that both workers read the same state. A test for lost updates needs another coordination point inside the persistence path.
 
 ~~~java
 var ready = new CountDownLatch(2);
 var go = new CountDownLatch(1);
 
-Runnable debit = () -> {
+Callable<Void> debit = () -> {
     ready.countDown();
     go.await();
     service.debit(accountId, money("80.00"));
+    return null;
 };
 ~~~
 

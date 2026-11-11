@@ -76,14 +76,14 @@ No abstract factory. No policy engine. No event bus. Simple thing first, because
 
 ## Refactor: Improve Shape Without Changing Behavior
 
-Now add null policy, currency scale, and maybe domain names. Tests protect you while structure improves.
+First improve domain names and structure while preserving behavior. Tests protect that refactor. New null policies or currency rules change behavior, so specify them in new tests before implementation.
 
 ~~~java
-Decision decide(Money alreadyWithdrawn, Money requested) {
-    Money total = alreadyWithdrawn.plus(requested);
-    return total.isGreaterThan(dailyLimit)
-        ? Decision.rejected("DAILY_LIMIT_EXCEEDED")
-        : Decision.allowed();
+Decision decide(BigDecimal alreadyWithdrawn, BigDecimal requested) {
+    boolean exceedsLimit = alreadyWithdrawn.add(requested).compareTo(dailyLimit) > 0;
+    return exceedsLimit
+        ? new Decision(false, "DAILY_LIMIT_EXCEEDED")
+        : new Decision(true, "OK");
 }
 ~~~
 

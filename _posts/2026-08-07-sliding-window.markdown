@@ -12,7 +12,7 @@ image:
   alt: A fixed analysis frame moving across a data stream while reusing retained state
 ---
 
-Many sequence problems ask about a contiguous range: requests in the last minute, the longest substring under a limit, or the maximum value in each block. Recomputing every range from scratch repeats almost all the same work.
+Many sequence problems ask about a contiguous range. Examples include requests in the last minute, the longest substring under a limit, or the maximum value in each block. Recomputing every range from scratch repeats almost all the same work.
 
 <!--more-->
 

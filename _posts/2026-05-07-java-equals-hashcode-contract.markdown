@@ -39,6 +39,10 @@ The classic mistake overrides only `equals`:
 final class CustomerId {
     private final String value;
 
+    CustomerId(String value) {
+        this.value = Objects.requireNonNull(value, "value");
+    }
+
     @Override
     public boolean equals(Object other) {
         return other instanceof CustomerId id && value.equals(id.value);

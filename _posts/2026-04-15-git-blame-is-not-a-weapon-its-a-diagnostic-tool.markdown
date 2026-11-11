@@ -45,7 +45,9 @@ Bad post-mortem says "be more careful". This is not action item. This is prayer.
 
 ## Engineering Fixes
 
-Add test. Add validation. Add safer default. Add feature flag. Improve alert. Make rollback easier. Document runbook. Remove confusing API.
+Add test. Add validation. Add safer default. Add feature flag.
+
+Improve alert. Make rollback easier. Document runbook. Remove confusing API.
 
 Culture improves when system improves.
 

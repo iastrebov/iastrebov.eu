@@ -16,7 +16,7 @@ image:
 
 <!--more-->
 
-An estimate such as “one to three weeks” is not complete by itself. State what drives the width: an external API may support the required filter, the existing data may be clean enough to migrate directly, or the team may need a compatibility layer. These are assumptions that can be tested.
+An estimate such as “one to three weeks” is not complete by itself. State what drives the range. Does the external API support the required filter? Is existing data clean enough to migrate directly? Will the team need a compatibility layer? These are assumptions that can be tested.
 
 Attach a confidence statement and a date for revision. Early discovery might justify a broad range at moderate confidence. After a spike, contract test, or schema sample, the range should narrow—or move. Updating an estimate after learning is evidence of a functioning process, not failure.
 

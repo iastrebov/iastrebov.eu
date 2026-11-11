@@ -21,7 +21,7 @@ Most startups asking for microservices need modular monolith, one database, stro
 
 When you split one application into ten services, you did not remove complexity. You changed its address.
 
-Now every function call can become network timeout. Every transaction becomes saga. Every log line needs correlation id. Every local refactor becomes versioned contract. Every deploy needs choreography.
+Now a cross-service call can become network timeout. A business operation spanning services may need a saga. Every log line needs correlation id. Every local refactor becomes versioned contract. Every deploy needs choreography.
 
 Congratulations, you invented operations department before product-market fit.
 

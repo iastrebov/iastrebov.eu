@@ -1,5 +1,5 @@
 <!-- Menu -->
-<div class="nav-container">
+<nav class="nav-container" aria-label="Main navigation">
     <ul class="nav">
         {% for item in site.navigation %}
         {% assign is_active = false %}
@@ -10,9 +10,13 @@
         {% if page.url == item.url or page.url == item_url or page.url == item.page %}
             {% assign is_active = true %}
         {% endif %}
+        {% assign is_blog_section = false %}
+        {% if page.blog_index and item.page == '/blog.html' %}
+            {% assign is_blog_section = true %}
+        {% endif %}
         <li class="nav__item">
-            <a class="{% if is_active %}active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            <a class="{% if is_active or is_blog_section %}active{% endif %}" href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page"{% elsif is_blog_section %} aria-current="location"{% endif %}>{{ item.title | escape }}</a>
         </li>
         {% endfor %}
     </ul>
-</div>
+</nav>

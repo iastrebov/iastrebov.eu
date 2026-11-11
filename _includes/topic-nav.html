@@ -1,0 +1,9 @@
+{% if site.blog_topics.size > 0 %}
+<nav class="topic-nav" aria-label="Blog topics">
+    <a href="{{ '/blog.html' | relative_url }}"{% if page.url == '/blog.html' %} aria-current="page"{% endif %}>All articles</a>
+    <a href="{{ '/blog/topics/' | relative_url }}"{% if page.url == '/blog/topics/' %} aria-current="page"{% endif %}>Browse topics</a>
+    {% for topic in site.blog_topics %}
+    <a href="{{ topic.url | relative_url }}"{% if page.topic.slug == topic.slug %} aria-current="page"{% endif %}>{{ topic.title | escape }}</a>
+    {% endfor %}
+</nav>
+{% endif %}

@@ -32,10 +32,14 @@ exclude:
   - Dockerfile
   - README.md
   - docs/
+  - scripts/
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+blog:
+  per_page: 12
 
 navigation:
   - title: About
@@ -43,16 +47,16 @@ navigation:
     url: /
   - title: Resume
     page: /resume.html
-    url: /resume
+    url: /resume.html
   - title: AI-Written Blog
     page: /blog.html
-    url: /blog
+    url: /blog.html
   - title: AI Note
     page: /blog/ai-supervised-human-owned/
-    url: /blog/ai-supervised-human-owned
+    url: /blog/ai-supervised-human-owned/
   - title: Contact
     page: /contact.html
-    url: /contact
+    url: /contact.html
 
 defaults:
   - scope:

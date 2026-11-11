@@ -4,8 +4,16 @@ title: Blog
 description: Posts and notes from Egor Iastrebov.
 ---
 
+{% include topic-nav.html %}
+
+{% if page.pagination.total_posts > 0 %}
+<p class="archive-summary">{{ page.pagination.total_posts }} articles. Page {{ page.pagination.page }} of {{ page.pagination.total_pages }}.</p>
 <div class="news-grid">
-    {% for post in site.posts %}
+    {% for post in page.pagination.posts %}
         {% include post-preview.html post=post %}
     {% endfor %}
 </div>
+{% include pagination.html %}
+{% else %}
+<p>No articles have been published yet.</p>
+{% endif %}

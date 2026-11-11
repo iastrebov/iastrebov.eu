@@ -1,4 +1,4 @@
-<div class="pb-0 pb-sm-2">
+<div class="pb-0 pb-sm-2{% if include.page.topic %} topic-heading{% endif %}">
   <h1 class="title title--h1 title__separate">{{ include.page.title }}</h1>
   {% if include.page.subtitle %}
     <p>{{ include.page.subtitle }}</p>

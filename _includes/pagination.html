@@ -1,0 +1,21 @@
+{% if page.pagination.total_pages > 1 %}
+<nav class="blog-pagination" aria-label="Blog pagination">
+    {% if page.pagination.previous_page_path %}
+    <a class="pagination-previous" href="{{ page.pagination.previous_page_path | relative_url }}" rel="prev">Previous</a>
+    {% endif %}
+    <ol class="pagination-pages">
+        {% for pagination_page in page.pagination.pages %}
+        <li>
+            {% if pagination_page.number == page.pagination.page %}
+            <span aria-current="page" aria-label="Page {{ pagination_page.number }}">{{ pagination_page.number }}</span>
+            {% else %}
+            <a href="{{ pagination_page.url | relative_url }}" aria-label="Page {{ pagination_page.number }}">{{ pagination_page.number }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ol>
+    {% if page.pagination.next_page_path %}
+    <a class="pagination-next" href="{{ page.pagination.next_page_path | relative_url }}" rel="next">Next</a>
+    {% endif %}
+</nav>
+{% endif %}

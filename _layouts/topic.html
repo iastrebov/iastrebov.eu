@@ -1,0 +1,15 @@
+---
+layout: base
+---
+<p>{{ page.description | escape }}</p>
+{% include topic-nav.html %}
+<p class="archive-summary">{{ page.topic.count }} articles</p>
+<ul class="topic-articles">
+    {% for topic_post in page.topic.posts %}
+    <li>
+        <h2 class="title title--h2"><a href="{{ topic_post.url | relative_url }}">{{ topic_post.title | escape }}</a></h2>
+        <time datetime="{{ topic_post.date | date_to_xmlschema }}">{{ topic_post.date | date: "%B %-d, %Y" }}</time>
+        <p>{{ topic_post.description | escape }}</p>
+    </li>
+    {% endfor %}
+</ul>

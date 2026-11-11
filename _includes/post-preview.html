@@ -1,16 +1,23 @@
 <!-- Post -->
+{% assign preview_image = include.post.image.url | default: site.social_image %}
+{% assign preview_image_key = preview_image %}
+{% assign preview_first_character = preview_image | slice: 0 %}
+{% if preview_first_character == '/' %}
+    {% assign preview_image_key = preview_image | remove_first: '/' %}
+{% endif %}
+{% assign preview_thumbnail = site.data.blog_thumbnails[preview_image_key] %}
 <article class="news-item box">
     <div class="news-item__image-wrap">
-        <a class="news-item__link" href="{{ include.post.url | relative_url }}"></a>
-        {% if include.post.image %}
-        <img class="cover lazyload" src="{{ include.post.image.url | relative_url }}" alt="{{ include.post.image.alt }}"/>
+        <a class="news-item__link" href="{{ include.post.url | relative_url }}" aria-label="{{ include.post.title | escape }}"></a>
+        {% if preview_thumbnail %}
+        <img class="cover" src="{{ preview_thumbnail.url | relative_url }}" width="{{ preview_thumbnail.width }}" height="{{ preview_thumbnail.height }}" loading="lazy" decoding="async" alt="{{ include.post.image.alt | default: include.post.title | escape }}"/>
         {% else %}
-        <img class="cover lazyload" src="{{ site.social_image | relative_url }}" alt="{{ site.title }}"/>
+        <img class="cover" src="{{ preview_image | relative_url }}" loading="lazy" decoding="async" alt="{{ include.post.image.alt | default: include.post.title | escape }}"/>
         {% endif %}
     </div>
     <div class="news-item__caption">
-        <div class="news-item__date">{{ include.post.date | date: "%B %-d, %Y" }}</div>
-        <h2 class="title title--h2"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
+        <time class="news-item__date" datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" }}</time>
+        <h2 class="title title--h2"><a href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></h2>
         {{ include.post.excerpt }}
     </div>
 </article>

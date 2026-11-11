@@ -1,0 +1,40 @@
+- slug: java-jvm
+  title: Java and JVM
+  description: Java language features, concurrency, memory, and JVM performance.
+  tags: [java, java-25, jvm, modern-java, virtual-threads]
+- slug: spring
+  title: Spring
+  description: Spring service boundaries, transactions, configuration, and application behavior.
+  tags: [spring, spring-boot]
+- slug: databases
+  title: Databases
+  description: PostgreSQL, SQL, data integrity, indexes, and database migrations.
+  tags: [database, postgresql, sql, hibernate, jpa]
+- slug: apis-security
+  title: APIs and Security
+  description: HTTP contracts, API compatibility, authentication, and safe input handling.
+  tags: [api, api-design, http, security, grpc, rest, webhooks]
+- slug: distributed-systems
+  title: Distributed Systems
+  description: Messaging, retries, ordering, caching, and failure handling across services.
+  tags: [distributed-systems, messaging, events, cache, caching, idempotency]
+- slug: testing
+  title: Testing
+  description: Tests that expose real failures, from unit assertions to integration contracts.
+  tags: [testing, tests, tdd, code-review, refactoring]
+- slug: reliability-operations
+  title: Reliability and Operations
+  description: Observability, incidents, production performance, deployment, and delivery.
+  tags: [reliability, observability, incident-response, incidents, on-call, deployment, devops, ci, delivery, performance]
+- slug: architecture
+  title: Architecture
+  description: System boundaries, design decisions, documentation, and long-term maintenance.
+  tags: [architecture, system-design, documentation, design, dependencies, maintenance, technical-debt]
+- slug: career-teams
+  title: Career and Teams
+  description: Engineering judgment, learning, ownership, collaboration, and writing.
+  tags: [career, teams, leadership, mentoring, engineering-culture, communication, planning, meetings, ai, developer-tools]
+- slug: algorithms
+  title: Algorithms
+  description: Data structures, complexity, and practical algorithmic techniques.
+  tags: [algorithms, data-structures, competitive-programming]

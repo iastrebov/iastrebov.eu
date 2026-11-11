@@ -1,0 +1,14 @@
+---
+layout: base
+---
+<p><a href="{{ '/blog.html' | relative_url }}">All articles</a></p>
+<div class="topic-list">
+    {% for topic in site.blog_topics %}
+    <section class="topic-card">
+        <h2 class="title title--h2"><a href="{{ topic.url | relative_url }}">{{ topic.title | escape }}</a></h2>
+        <p>{{ topic.description | escape }}</p>
+        <p>{{ topic.count }} articles</p>
+    </section>
+    {% endfor %}
+</div>
+{% if site.blog_topics.size == 0 %}<p>No articles have been published yet.</p>{% endif %}

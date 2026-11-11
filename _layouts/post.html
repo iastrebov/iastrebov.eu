@@ -4,18 +4,27 @@ layout: default
 {% assign post_image = page.image.url | default: site.social_image %}
 
 <div class="pb-0 pb-sm-2">
-    <h2 class="title title--h1 title__separate">Blog</h2>
+    <p class="title title--h1 title__separate"><a href="{{ '/blog.html' | relative_url }}">Blog</a></p>
 </div>
 
 <!-- Post -->
-<div class="pb-3">
+<article class="pb-3" aria-labelledby="post-title">
     <header class="header-post">
-        <h1 class="title title--h1">{{ page.title }}</h1>
+        <h1 id="post-title" class="title title--h1">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            By <a href="{{ '/' | relative_url }}" rel="author">{{ site.author.name | escape }}</a>
+            <span aria-hidden="true"> · </span>
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+            {% if page.last_modified_at %}
+            <span aria-hidden="true"> · </span>
+            Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time>
+            {% endif %}
+        </p>
         <div class="caption-post">
             {{ page.greeting}}
         </div>
         <div class="header-post__image-wrap">
-            <img class="cover lazyload" src="{{ post_image | relative_url }}" alt="{{ page.image.alt | default: page.title }}"/>
+            <img class="cover" src="{{ post_image | relative_url }}" alt="{{ page.image.alt | default: page.title | escape }}" fetchpriority="high" decoding="async"/>
         </div>
     </header>
     <aside class="post-disclosure" aria-label="AI-assisted writing disclosure">
@@ -24,6 +33,11 @@ layout: default
     </aside>
 
     {{ content }}
-</div>
+    <footer class="post-footer">
+        <a href="{{ '/blog/topics/' | relative_url }}">Browse articles by topic</a>
+    </footer>
+</article>
+
+{% include related-posts.html %}
 
 {% include comments.html %}

@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /robots.txt
+sitemap: false
+---
+# Search crawlers may read all public pages and assets.
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Preserve the existing permissive policy for other crawlers, including training
+# crawlers and user-requested retrieval. Search access and training are separate.
+User-agent: *
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}

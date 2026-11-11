@@ -1,0 +1,46 @@
+{% assign schema_home_url = '/' | absolute_url %}
+{% assign schema_person_id = schema_home_url | append: '#person' %}
+{% assign schema_website_id = schema_home_url | append: '#website' %}
+{% assign schema_page_url = page.url | absolute_url %}
+{% capture structured_data %}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ schema_person_id | jsonify }},
+      "name": {{ site.author.name | jsonify }},
+      "url": {{ schema_home_url | jsonify }},
+      "jobTitle": {{ site.job_title | jsonify }},
+      "sameAs": [{{ site.linkedin_url | jsonify }}, {{ site.github_url | jsonify }}]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ schema_website_id | jsonify }},
+      "url": {{ schema_home_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "inLanguage": {{ site.lang | default: 'en' | jsonify }},
+      "publisher": { "@id": {{ schema_person_id | jsonify }} }
+    }{% if page.layout == 'post' %},
+    {
+      "@type": "BlogPosting",
+      "@id": {{ schema_page_url | append: '#article' | jsonify }},
+      "url": {{ schema_page_url | jsonify }},
+      "mainEntityOfPage": {{ schema_page_url | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | default: site.description | jsonify }},
+      "image": {{ page.image.url | default: site.social_image | absolute_url | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      {% if page.last_modified_at %}"dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},{% endif %}
+      "author": { "@id": {{ schema_person_id | jsonify }} },
+      "publisher": { "@id": {{ schema_person_id | jsonify }} },
+      "isPartOf": { "@id": {{ schema_website_id | jsonify }} },
+      "inLanguage": {{ site.lang | default: 'en' | jsonify }},
+      "articleSection": {{ page.categories | jsonify }},
+      "keywords": {{ page.tags | jsonify }}
+    }{% endif %}
+  ]
+}
+{% endcapture %}
+<script type="application/ld+json">{{ structured_data | strip | replace: '<', '\u003c' }}</script>

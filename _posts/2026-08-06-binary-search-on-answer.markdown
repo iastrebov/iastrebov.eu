@@ -33,10 +33,10 @@ while (low < high) {
 return low;
 ```
 
-Most bugs live in the contract, not the loop. Prove monotonicity. Define whether bounds are inclusive. Establish that the upper bound is truly feasible. Use overflow-safe arithmetic in both midpoint calculation and the predicate; a feasibility check that multiplies large values can silently reverse its answer.
+Most bugs live in the contract, not the loop. Prove monotonicity. Define whether bounds are inclusive. Establish that the upper bound is truly feasible. Use overflow-safe arithmetic in both midpoint calculation and the predicate. Multiplying large values can silently reverse a feasibility check’s answer.
 
 Test the boundary directly: the returned value must be feasible, and the previous value must be infeasible when it exists. Include cases where the answer equals the lower or upper bound. These assertions reveal off-by-one errors better than a large random example.
 
 For real-valued answers, iteration count or tolerance replaces exact adjacency. Be explicit about numerical error and whether the final value must be rounded up to remain safe. Binary search does not make a noisy or non-monotonic measurement reliable.
 
-This technique is sometimes called “binary search on the answer,” but the name can obscure its reasoning. You are searching an ordered decision space whose predicate changes once. When that invariant is real and the check is cheaper than direct optimization, the method turns a difficult construction into a controlled sequence of yes-or-no questions.
+This technique is sometimes called “binary search on the answer,” but the name can obscure its reasoning. You are searching an ordered decision space whose predicate changes once. When that invariant holds, the method replaces construction with a sequence of yes-or-no checks. It helps when checking feasibility costs less than direct optimization.

@@ -21,7 +21,7 @@ Difference is large. Framework developer knows which annotation to paste. Engine
 
 Spring Boot is excellent. It removes boilerplate, standardizes configuration, and gets services running fast.
 
-But if you can build CRUD app in five minutes and cannot explain HTTP status codes, transactions, thread pools, or how dependency injection works, you are not backend engineer. You are annotation operator.
+Building CRUD app in five minutes does not make you backend engineer. You still need to explain HTTP status codes, transactions, thread pools, and dependency injection. Without that understanding, you are annotation operator.
 
 ## Magic Has Cost
 

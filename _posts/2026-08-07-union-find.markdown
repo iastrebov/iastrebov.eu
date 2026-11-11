@@ -42,4 +42,4 @@ This supports cycle detection in undirected graphs, grouping equivalent identifi
 
 The limitation is as important as the speed: ordinary union-find does not handle deletions or answer path questions. Once two groups merge, it cannot cheaply split them again. Dynamic connectivity with edge removal needs a different or offline approach. It also tells you that two items connect, not which edges form a route between them.
 
-Initialize every item as its own parent, and keep component metadata only at roots. Union-find is a narrow structure, but within that boundary it replaces repeated graph searches with a clear invariant: every member of a component resolves to the same representative.
+Initialize every item as its own parent, and keep component metadata only at roots. Within that boundary, union-find replaces repeated graph searches with one invariant. Every member of a component resolves to the same representative.

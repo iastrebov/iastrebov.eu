@@ -53,7 +53,9 @@ Best work happens when engineers push back early and product adapts scope intell
 
 ## How To Revive It
 
-Shorten feedback loop. Ship smaller. Keep trunk healthy. Automate tests. Refactor continuously. Delete meetings that do not change decisions. Make retros produce concrete improvements.
+Shorten feedback loop. Ship smaller. Keep trunk healthy. Automate tests.
+
+Refactor continuously. Delete meetings that do not change decisions. Make retros produce concrete improvements.
 
 Stop worshiping process. Use process only where it helps thinking.
 

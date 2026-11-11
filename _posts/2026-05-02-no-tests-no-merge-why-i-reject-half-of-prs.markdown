@@ -90,7 +90,7 @@ Money systems are mostly boring arithmetic plus very expensive edge cases. Tests
 
 I want to see tests for happy path, boundaries, failure path, and regression if bug was fixed. I want test names that explain business rule. I want no giant mocked circus that only tests Mockito configuration.
 
-If code changes public behavior and tests do not change, I assume one of two things: behavior did not change, or author did not understand what changed. Both are review blockers.
+If public behavior changes and tests do not, ask what existing tests already prove. Missing coverage for the new behavior blocks review. An unchanged test file alone does not prove that evidence is missing.
 
 ## But Tests Slow Us Down
 

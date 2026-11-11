@@ -68,6 +68,8 @@ GetBalanceResponse response = ledger.getBalance(
 
 Deadline is explicit. Types are generated. Payload is binary.
 
+`usePlaintext()` is for this local example. Production traffic needs an authenticated, encrypted transport, such as [gRPC TLS credentials](https://grpc.io/docs/guides/auth/). Close the channel when its application lifecycle ends.
+
 ## REST Still Has Place
 
 Use REST for public APIs, browser clients, simple CRUD, and integration with external partners. It is universal and debuggable.

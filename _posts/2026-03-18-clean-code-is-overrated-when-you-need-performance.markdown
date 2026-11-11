@@ -13,7 +13,7 @@ image:
 ---
 Clean Code is good advice for most business logic. Most.
 
-There is remaining 5% where pretty abstraction burns CPU, allocates garbage, and loses money. In hot path, performance is feature.
+There are hot paths where pretty abstraction burns CPU, allocates garbage, and loses money. In hot path, performance is feature.
 
 <!--more-->
 

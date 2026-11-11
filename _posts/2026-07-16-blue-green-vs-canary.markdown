@@ -24,4 +24,4 @@ Neither approach makes a destructive schema migration reversible. Database chang
 
 Choose blue-green when a complete environment swap is practical and rapid rollback is the primary requirement. Choose canary when production traffic is the necessary test and partial exposure is acceptable. Large systems often combine them: create a green environment, direct a canary slice to it, then move the remaining traffic after the signals hold.
 
-The release mechanism is only half the safety system. Define the health signals and the stopping rule, and connect them to an [error budget](/blog/slo-error-budget/) rather than promoting because a timer expired.
+The release mechanism is only half the safety system. Define the health signals and the stopping rule. Connect them to an [error budget](/blog/slo-error-budget/). Elapsed time alone is not evidence for promotion.

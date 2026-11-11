@@ -34,7 +34,7 @@ It does not get to manufacture a career for me. It should not invent an incident
 
 Because having something useful to say and presenting it clearly are different jobs.
 
-An idea in my head may begin as fragments: one production concern, one argument from a code review, one pattern that keeps returning, or one technical question I want to settle. Raw experience is valuable, but raw notes are usually poor interface for a reader.
+An idea in my head may begin as fragments: a production concern, a code-review argument, or a recurring pattern. Sometimes it starts with one technical question I want to settle. Raw experience is valuable, but raw notes are usually poor interface for a reader.
 
 AI is part of that interface. It helps give the material a sequence, remove noise, and make the explanation easier to enter. Think about compiler: source still has an author, even when another system transforms it into a form people can run.
 
@@ -52,7 +52,7 @@ Of course, not every post will be universal truth. Some are explanations, some a
 
 AI has a dangerous talent: it can make weak thinking sound complete. Smooth paragraphs can hide a missing mechanism. Confident tone can hide uncertainty. Five tidy sections can create illusion that a messy problem is solved.
 
-This is why supervision matters. The work is not finished when text becomes fluent. It is finished when the argument still represents what I mean, examples survive scrutiny, uncertainty is not erased, and the result is useful to somebody facing a similar question.
+This is why supervision matters. The work is not finished when text becomes fluent. The argument must still represent what I mean. Examples must survive scrutiny, and uncertainty must remain visible. The result must help somebody facing a similar question.
 
 You may still disagree with me. Good. This blog should show a path, not issue commandments from machine-polished stone. Test the advice against your system, your team, and your constraints.
 

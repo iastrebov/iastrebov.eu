@@ -18,7 +18,7 @@ Skipping dependency upgrades feels efficient until several years of changes arri
 
 Prefer a steady queue of small updates. Automation can open proposals and summarize release notes, but it should not merge solely because compilation succeeds. Classify updates by risk: a patch to a leaf library, a database driver, a serialization framework, and a major web framework release deserve different evidence.
 
-Keep lockfiles and resolved dependency graphs visible. A direct version change can replace many transitive components. Review the graph delta, not just the edited line. For security fixes, determine whether the vulnerable code is reachable in your application, but do not use uncertain reachability as a permanent excuse to remain exposed.
+Keep lockfiles and resolved dependency graphs visible. A direct version change can replace many transitive components. Review the graph delta, not just the edited line. For security fixes, determine whether the vulnerable code is reachable in your application. Uncertain reachability is not a permanent excuse to remain exposed.
 
 Tests need to cover contracts at dependency boundaries. If the application relies on JSON defaults, transaction behavior, time-zone parsing, retry classification, or SQL generation, make those expectations executable. These focused checks often detect compatibility changes more clearly than a broad end-to-end suite.
 

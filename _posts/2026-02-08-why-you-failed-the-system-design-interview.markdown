@@ -55,7 +55,7 @@ Every solution has invoice.
 
 ## Operational Thinking
 
-How do you deploy? Roll back? Observe? Reprocess failed messages? Handle duplicate events? Backfill data? Rotate secrets?
+How do you deploy, roll back, and observe the system? How do you reprocess failed messages and handle duplicate events? How do you backfill data and rotate secrets?
 
 Seniors talk about system after diagram exists.
 

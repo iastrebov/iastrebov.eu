@@ -26,6 +26,6 @@ Present serious alternatives. Explain why each was rejected under the current co
 
 Include a staged delivery plan. Identify compatibility periods, feature flags, schema expansion, backfills, validation, and the signal required to proceed. Name the owner of operational readiness as well as implementation.
 
-Keep the document proportional. A one-page change may need a one-page design. A cross-region data migration deserves more. Use diagrams when they clarify flow or ownership; do not decorate straightforward prose.
+Keep the document proportional. A one-page change may need a one-page design. A cross-region data migration deserves more. Use diagrams when they clarify flow or ownership. Do not decorate straightforward prose.
 
 After approval, record durable choices as [architecture decision records](/blog/architecture-decision-records/) and update the design when implementation disproves an assumption. The document is a tool for shared reasoning, not evidence that the original author predicted everything correctly.

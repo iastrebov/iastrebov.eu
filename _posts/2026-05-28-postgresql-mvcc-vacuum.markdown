@@ -33,7 +33,7 @@ Autovacuum thresholds that work for a large stable table may react too slowly to
 
 Updates can create index churn. HOT updates help when indexed columns do not change and page space allows it, but schema and fill pattern matter. Ten unnecessary indexes make every row change heavier.
 
-The useful investigation crosses layers: which endpoint updates the row, how long its transaction lives, which columns change, how frequently autovacuum runs, and whether queries still estimate cardinality correctly.
+Investigate across layers. Identify the endpoint updating the row and measure its transaction duration. Check which columns change, how frequently autovacuum runs, and whether row estimates remain accurate.
 
 Vacuum problems are rarely solved by one heroic manual command. Short transactions and observable maintenance are the boring durable fix.
 

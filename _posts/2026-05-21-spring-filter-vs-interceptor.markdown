@@ -17,7 +17,7 @@ Filters and interceptors both run “around requests,” which is true in the sa
 
 ## Filter: Servlet Boundary
 
-A filter runs in the servlet chain before Spring MVC selects a controller. It is a good place for correlation IDs, raw request wrapping, security mechanisms integrated at that layer, and headers that must apply even when no controller matches.
+A filter runs in the servlet chain before Spring MVC selects a controller. Use filters for correlation IDs, raw request wrapping, and security integrated with the servlet chain. They can also add headers when no controller matches.
 
 ~~~java
 class CorrelationFilter extends OncePerRequestFilter {
@@ -39,7 +39,9 @@ Async dispatch and error dispatch need deliberate handling. “Once” has frame
 
 ## Interceptor: MVC Boundary
 
-An MVC interceptor runs after handler mapping, so it can inspect the chosen handler and annotations. This fits controller-level authorization metadata, locale decisions, or request timing tied to route information.
+An MVC interceptor runs after handler mapping, so it can inspect the chosen handler and annotations. This fits locale decisions or request timing tied to route information.
+
+Use Spring Security for authorization, with protection in the servlet filter chain or at the service method boundary. [Spring cautions against treating MVC interceptors as a security layer](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/interceptors.html) because path matching can differ.
 
 It is not ideal for changing raw request bodies, and it will not cover traffic handled outside MVC.
 

@@ -27,7 +27,7 @@ Do not assert a full response snapshot when the consumer reads two fields. Overs
 
 They catch incompatible payload and interaction changes. They do not prove DNS, authentication deployment, network policy, database migration, or full workflow semantics.
 
-Publish contract versions, associate them with deployable builds, and define whether a provider may deploy when an old consumer contract fails. The workflow is more important than the library.
+Publish contract versions. Associate each version with a deployable build. Define whether a provider may deploy when an old consumer contract fails. The workflow is more important than the library.
 
 State setup must also be part of the contract harness. A provider verification that mocks its handler returns proves only the mock. Seed the smallest realistic provider state and invoke the same serialization and routing path used by production, while keeping unrelated dependencies controlled.
 

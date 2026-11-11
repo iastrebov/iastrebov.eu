@@ -36,4 +36,4 @@ Choose failure semantics deliberately. Methods such as `removeFirst` throw when 
 
 An in-memory queue provides ordering, not durability or concurrency safety. It loses work with the process and `ArrayDeque` is not safe for unsynchronized concurrent mutation. Cross-thread handoff needs a concurrent queue or blocking queue; cross-process jobs need a broker or persistent design with acknowledgment and duplicate handling.
 
-Data structures are useful when their invariant matches the problem. Choose a queue to preserve arrival order, a stack to revisit the newest item first, and a deque when the algorithm genuinely needs both ends—not because it exposes more methods.
+Data structures are useful when their invariant matches the problem. Choose a FIFO queue to preserve arrival order. Choose a stack to revisit the newest item first. Use a deque when the algorithm needs both ends. More methods alone are not a reason.

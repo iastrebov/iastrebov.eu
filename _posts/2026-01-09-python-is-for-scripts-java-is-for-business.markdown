@@ -13,7 +13,9 @@ image:
 ---
 Python is excellent language for scripts, data exploration, automation, notebooks, glue, and fast ideas. I like it there.
 
-But if you ask me to move millions of dollars through high-load backend, I want Java. Boring compiled Java. Static types. JVM. Mature observability. Predictable failure modes. The bank vault, not duct-tape snake.
+But if you ask me to move millions of dollars through high-load backend, I want Java. Boring compiled Java. Static types. JVM.
+
+Mature observability. Predictable failure modes. The bank vault, not duct-tape snake.
 
 <!--more-->
 
@@ -34,7 +36,9 @@ record TransferCommand(
 ) {}
 ~~~
 
-In Python, you can model carefully too. Type hints exist. Pydantic exists. Discipline exists. But runtime will still allow many mistakes until path executes. In fintech, some paths execute only during rare incident. Nice surprise.
+In Python, you can model carefully too. Type hints exist. Pydantic exists. Discipline exists.
+
+But runtime will still allow many mistakes until path executes. In fintech, some paths execute only during rare incident. Nice surprise.
 
 ## The JVM Is Business Infrastructure
 

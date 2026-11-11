@@ -20,9 +20,17 @@ Define the gap in behavioral terms. “Learn distributed systems” is too broad
 
 Choose one primary resource and one project. Too many books and tutorials encourage constant restarting. The project should be small enough to finish but realistic enough to reveal tradeoffs: persistence, failure injection, metrics, and operational limits. A toy that never fails cannot teach recovery.
 
-Use a tight cycle: read enough to form a model, implement a slice, test the model, explain the result, and ask for critique. Writing a short design note or article exposes gaps that passive recognition hides. Code review and architecture discussion add feedback from people who see different failure modes.
+Use a tight cycle:
 
-Keep an evidence log. Record the question, experiment, surprising result, and changed belief. Avoid counting only hours or completed chapters; track artifacts such as a benchmark, debugging write-up, pull request, incident analysis, or reusable example.
+1. Read enough to form a model.
+2. Implement a slice.
+3. Test the model.
+4. Explain the result.
+5. Ask for critique.
+
+Writing a short design note or article exposes gaps that passive recognition hides. Code review and architecture discussion add feedback from people who see different failure modes.
+
+Keep an evidence log. Record the question, experiment, surprising result, and changed belief. Track artifacts such as benchmarks, debugging write-ups, pull requests, incident analyses, or reusable examples. Hours and completed chapters alone do not prove progress.
 
 Apply the skill in production under appropriate supervision. A side project can teach a mechanism, but real constraints teach prioritization and communication. Volunteer for a bounded task near the target area and pair with its owner rather than attempting an unsupported leap.
 

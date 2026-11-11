@@ -33,7 +33,11 @@ This improves thread scalability. It says nothing about whether the two remote c
 
 ## What Pinning Means
 
-A virtual thread is pinned when it cannot unmount from its carrier during a blocking operation. Long blocking inside a `synchronized` region is a common shape to inspect, as are some native or foreign-function calls.
+A virtual thread is pinned when it cannot unmount from its carrier during a blocking operation. The cause depends on the JDK version.
+
+In JDK 21–23, blocking inside `synchronized` could pin the carrier. JDK 24 removed monitor-related pinning through JEP 491, so that explanation does not apply to ordinary monitor blocking on Java 25. [Oracle documents the JDK 24 change](https://docs.oracle.com/en/java/javase/24/migrate/significant-changes-jdk-24.html).
+
+Native methods and foreign-function calls can still pin virtual threads. Check the [virtual-thread scheduling documentation](https://docs.oracle.com/en/java/javase/25/core/virtual-threads.html) for the runtime you deploy.
 
 ~~~java
 synchronized (lock) {
@@ -41,9 +45,11 @@ synchronized (lock) {
 }
 ~~~
 
+On Java 25, this example still holds the monitor during remote I/O. That serializes callers sharing the lock, even without pinning.
+
 The deeper design smell is holding a lock around remote I/O. Replacing `synchronized` mechanically may hide the signal without fixing ownership.
 
-Keep critical sections short. Move the network call outside the lock. If the lock protects a state transition, capture the state you need, release, perform I/O, then reconcile the result explicitly.
+Keep critical sections short. Move the network call outside the lock. If the lock protects a state transition, capture the required state under the lock. Release the lock. Perform I/O. Reacquire the lock and reconcile against current state.
 
 ## Pools Still Have Capacity
 

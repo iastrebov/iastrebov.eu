@@ -35,7 +35,9 @@ void apply(Transaction tx) {
 
 Problems everywhere.
 
-Repository may return null. Transaction type may be null. Amount may be negative. Balance update is read-modify-write race. Duplicate transaction can be applied twice. No idempotency. No version check.
+Repository may return null. Transaction type may be null. Amount may be negative. Balance update is read-modify-write race.
+
+Duplicate transaction can be applied twice. No idempotency. No version check.
 
 This is not code. This is incident seed.
 

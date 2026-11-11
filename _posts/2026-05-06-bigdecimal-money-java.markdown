@@ -27,7 +27,7 @@ System.out.println(fee);
 // 0.1000000000000000055511151231257827021181583404541015625
 ~~~
 
-Use a decimal string when the value is written by a human, or `BigDecimal.valueOf` when a `double` is unavoidable at a boundary.
+Use a decimal string when a human writes the value. If a `double` is unavoidable at a boundary, use `BigDecimal.valueOf`.
 
 ~~~java
 BigDecimal exact = new BigDecimal("0.10");

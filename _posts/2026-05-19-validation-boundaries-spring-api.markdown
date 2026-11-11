@@ -13,7 +13,7 @@ image:
 ---
 `@NotBlank` can prove a field contains characters. It cannot prove an account may transfer money now.
 
-Treat all validation as controller decoration and business rules leak through every other entry point: jobs, message consumers, admin tools, and tests.
+When validation exists only in controllers, other entry points can bypass business rules. Jobs, message consumers, admin tools, and tests need the same domain invariants.
 
 <!--more-->
 

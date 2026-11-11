@@ -16,7 +16,7 @@ Many execution problems are dependency problems in disguise. A migration require
 
 <!--more-->
 
-Kahn's algorithm makes the operational meaning clear. Count each node's incoming dependencies, place nodes with a zero count in a queue, then repeatedly emit one and decrement its dependents.
+Kahn's algorithm makes the operational meaning clear. Count each node's incoming dependencies. Place nodes with a zero count in a queue. Repeatedly emit one ready node and decrement its dependents' counts.
 
 ```java
 Deque<Node> ready = new ArrayDeque<>();
@@ -37,7 +37,7 @@ while (!ready.isEmpty()) {
 
 If the output contains fewer nodes than the graph, a cycle exists. That is not a sorting inconvenience; it means the requested dependency plan is impossible. Report the remaining nodes and, ideally, reconstruct a cycle so the user can repair the configuration.
 
-The order is not necessarily unique. Several nodes may be ready at once. Use a priority queue when deterministic lexical order matters, or schedule all ready nodes in parallel when resources and failure semantics allow it. The graph defines precedence, not mandatory serialization.
+The order is not necessarily unique. Several nodes may be ready at once. Use a priority queue when deterministic lexical order matters. When resources and failure semantics permit parallel work, schedule all ready nodes. The graph defines precedence, not mandatory serialization.
 
 Validate graph construction carefully. Missing nodes, duplicate edges, or an edge pointed in the wrong direction can create a plausible but incorrect plan. Name the edge consistently—“A depends on B” versus “B must precede A”—and test a small asymmetric example.
 
